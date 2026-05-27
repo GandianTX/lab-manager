@@ -1,0 +1,331 @@
+{
+  "keys": "/home/gandiantx/lab-manager/server/config/config.default.js",
+  "security": {
+    "csrf": {
+      "enable": "/home/gandiantx/lab-manager/server/config/config.default.js",
+      "type": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "ignoreJSON": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "useSession": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "cookieName": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "sessionName": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "headerName": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "bodyName": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "queryName": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "rotateWhenInvalid": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "supportedRequests": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "refererWhiteList": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "cookieOptions": {
+        "signed": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+      }
+    },
+    "domainWhiteList": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+    "protocolWhiteList": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+    "defaultMiddleware": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+    "xframe": {
+      "enable": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "value": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+    },
+    "hsts": {
+      "enable": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.local.js",
+      "maxAge": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "includeSubdomains": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+    },
+    "dta": {
+      "enable": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+    },
+    "noopen": {
+      "enable": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+    },
+    "nosniff": {
+      "enable": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "value": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+    },
+    "xssProtection": {
+      "enable": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "value": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+    },
+    "csp": {
+      "enable": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "policy": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "ipExceptionList": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "hostnameExceptionList": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
+      "checkAddress": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+    }
+  },
+  "cors": {
+    "origin": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "allowMethods": "/home/gandiantx/lab-manager/server/config/config.default.js"
+  },
+  "validate": {
+    "convert": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "widelyUndefined": "/home/gandiantx/lab-manager/server/config/config.default.js"
+  },
+  "sequelize": {
+    "dialect": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "host": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "port": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "database": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "username": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "password": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "timezone": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "define": {
+      "freezeTableName": "/home/gandiantx/lab-manager/server/config/config.default.js",
+      "underscored": "/home/gandiantx/lab-manager/server/config/config.default.js",
+      "timestamps": "/home/gandiantx/lab-manager/server/config/config.default.js"
+    },
+    "pool": {
+      "max": "/home/gandiantx/lab-manager/server/config/config.default.js",
+      "min": "/home/gandiantx/lab-manager/server/config/config.default.js",
+      "acquire": "/home/gandiantx/lab-manager/server/config/config.default.js",
+      "idle": "/home/gandiantx/lab-manager/server/config/config.default.js"
+    }
+  },
+  "middleware": "/home/gandiantx/lab-manager/server/config/config.default.js",
+  "auth": {
+    "enable": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "ignore": "/home/gandiantx/lab-manager/server/config/config.default.js"
+  },
+  "session": {
+    "maxAge": "/home/gandiantx/lab-manager/server/node_modules/egg-session/config/config.default.js",
+    "key": "/home/gandiantx/lab-manager/server/node_modules/egg-session/config/config.default.js",
+    "httpOnly": "/home/gandiantx/lab-manager/server/node_modules/egg-session/config/config.default.js",
+    "encrypt": "/home/gandiantx/lab-manager/server/node_modules/egg-session/config/config.default.js",
+    "logValue": "/home/gandiantx/lab-manager/server/node_modules/egg-session/config/config.default.js"
+  },
+  "helper": {
+    "shtml": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js"
+  },
+  "jsonp": {
+    "limit": "/home/gandiantx/lab-manager/server/node_modules/egg-jsonp/config/config.default.js",
+    "callback": "/home/gandiantx/lab-manager/server/node_modules/egg-jsonp/config/config.default.js",
+    "csrf": "/home/gandiantx/lab-manager/server/node_modules/egg-jsonp/config/config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "/home/gandiantx/lab-manager/server/node_modules/egg-onerror/config/config.default.js",
+    "appErrorFilter": "/home/gandiantx/lab-manager/server/node_modules/egg-onerror/config/config.default.js",
+    "templatePath": "/home/gandiantx/lab-manager/server/node_modules/egg-onerror/config/config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "/home/gandiantx/lab-manager/server/node_modules/egg-i18n/config/config.default.js",
+    "dirs": "/home/gandiantx/lab-manager/server/node_modules/egg-i18n/config/config.default.js",
+    "queryField": "/home/gandiantx/lab-manager/server/node_modules/egg-i18n/config/config.default.js",
+    "cookieField": "/home/gandiantx/lab-manager/server/node_modules/egg-i18n/config/config.default.js",
+    "cookieDomain": "/home/gandiantx/lab-manager/server/node_modules/egg-i18n/config/config.default.js",
+    "cookieMaxAge": "/home/gandiantx/lab-manager/server/node_modules/egg-i18n/config/config.default.js"
+  },
+  "watcher": {
+    "type": "/home/gandiantx/lab-manager/server/node_modules/egg-watcher/config/config.local.js",
+    "eventSources": {
+      "default": "/home/gandiantx/lab-manager/server/node_modules/egg-watcher/config/config.default.js",
+      "development": "/home/gandiantx/lab-manager/server/node_modules/egg-watcher/config/config.default.js"
+    }
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "/home/gandiantx/lab-manager/server/node_modules/egg-schedule/config/config.default.js",
+      "file": "/home/gandiantx/lab-manager/server/node_modules/egg-schedule/config/config.default.js"
+    }
+  },
+  "schedule": {
+    "directory": "/home/gandiantx/lab-manager/server/node_modules/egg-schedule/config/config.default.js"
+  },
+  "multipart": {
+    "mode": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "autoFields": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "defaultCharset": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "defaultParamCharset": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "fieldNameSize": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "fieldSize": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "fields": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "fileSize": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "files": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "fileExtensions": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "whitelist": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "allowArrayField": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "tmpdir": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+    "cleanSchedule": {
+      "cron": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js",
+      "disable": "/home/gandiantx/lab-manager/server/node_modules/egg-multipart/config/config.default.js"
+    }
+  },
+  "development": {
+    "watchDirs": "/home/gandiantx/lab-manager/server/node_modules/egg-development/config/config.default.js",
+    "ignoreDirs": "/home/gandiantx/lab-manager/server/node_modules/egg-development/config/config.default.js",
+    "fastReady": "/home/gandiantx/lab-manager/server/node_modules/egg-development/config/config.default.js",
+    "reloadOnDebug": "/home/gandiantx/lab-manager/server/node_modules/egg-development/config/config.default.js",
+    "overrideDefault": "/home/gandiantx/lab-manager/server/node_modules/egg-development/config/config.default.js",
+    "overrideIgnore": "/home/gandiantx/lab-manager/server/node_modules/egg-development/config/config.default.js"
+  },
+  "logrotator": {
+    "filesRotateByHour": "/home/gandiantx/lab-manager/server/node_modules/egg-logrotator/config/config.default.js",
+    "hourDelimiter": "/home/gandiantx/lab-manager/server/node_modules/egg-logrotator/config/config.default.js",
+    "filesRotateBySize": "/home/gandiantx/lab-manager/server/node_modules/egg-logrotator/config/config.default.js",
+    "maxFileSize": "/home/gandiantx/lab-manager/server/node_modules/egg-logrotator/config/config.default.js",
+    "maxFiles": "/home/gandiantx/lab-manager/server/node_modules/egg-logrotator/config/config.default.js",
+    "rotateDuration": "/home/gandiantx/lab-manager/server/node_modules/egg-logrotator/config/config.default.js",
+    "maxDays": "/home/gandiantx/lab-manager/server/node_modules/egg-logrotator/config/config.default.js"
+  },
+  "static": {
+    "prefix": "/home/gandiantx/lab-manager/server/node_modules/egg-static/config/config.default.js",
+    "dir": "/home/gandiantx/lab-manager/server/node_modules/egg-static/config/config.default.js",
+    "dynamic": "/home/gandiantx/lab-manager/server/node_modules/egg-static/config/config.default.js",
+    "preload": "/home/gandiantx/lab-manager/server/node_modules/egg-static/config/config.default.js",
+    "buffer": "/home/gandiantx/lab-manager/server/node_modules/egg-static/config/config.default.js",
+    "maxFiles": "/home/gandiantx/lab-manager/server/node_modules/egg-static/config/config.default.js"
+  },
+  "view": {
+    "root": "/home/gandiantx/lab-manager/server/node_modules/egg-view/config/config.default.js",
+    "cache": "/home/gandiantx/lab-manager/server/node_modules/egg-view/config/config.local.js",
+    "defaultExtension": "/home/gandiantx/lab-manager/server/node_modules/egg-view/config/config.default.js",
+    "defaultViewEngine": "/home/gandiantx/lab-manager/server/node_modules/egg-view/config/config.default.js",
+    "mapping": "/home/gandiantx/lab-manager/server/node_modules/egg-view/config/config.default.js"
+  },
+  "env": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "name": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "cookies": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "proxy": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "maxIpsCount": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "maxProxyCount": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "protocolHeaders": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "ipHeaders": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "hostHeaders": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "pkg": {
+    "name": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "version": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "description": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "private": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "egg": {
+      "declarations": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    },
+    "scripts": {
+      "dev": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "start": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "stop": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "db:init": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    },
+    "dependencies": {
+      "bcryptjs": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "egg": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "egg-cors": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "egg-jwt": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "egg-scripts": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "egg-sequelize": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "egg-validate": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "jsonwebtoken": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "mysql2": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    },
+    "devDependencies": {
+      "egg-bin": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "egg-mock": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    },
+    "engines": {
+      "node": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "baseDir": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "HOME": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "rundir": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "dump": {
+    "ignore": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "timing": {
+      "slowBootActionMinDuration": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "confusedConfigurations": {
+    "bodyparser": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "notFound": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "sitefile": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "middlewares": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "httpClient": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+  },
+  "siteFile": {
+    "/favicon.ico": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "cacheControl": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+  },
+  "bodyParser": {
+    "enable": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "encoding": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "formLimit": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "jsonLimit": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "textLimit": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "strict": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "queryString": {
+      "arrayLimit": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "depth": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "parameterLimit": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    },
+    "onerror": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+  },
+  "logger": {
+    "dir": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "encoding": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "env": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "level": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "consoleLevel": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "disableConsoleAfterReady": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "outputJSON": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "buffer": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "appLogName": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "coreLogName": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "agentLogName": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "errorLogName": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "coreLogger": {
+      "consoleLevel": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.local.js"
+    },
+    "allowDebugAtProd": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "enablePerformanceTimer": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "enableFastContextLogger": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+  },
+  "httpclient": {
+    "enableDNSCache": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "dnsCacheLookupInterval": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "dnsCacheMaxLength": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "request": {
+      "timeout": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "maxSockets": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "freeSocketTimeout": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "maxSockets": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "maxFreeSockets": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    },
+    "useHttpClientNext": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+  },
+  "meta": {
+    "enable": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "logging": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+  },
+  "coreMiddleware": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "workerStartTimeout": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "serverTimeout": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "port": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "hostname": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+    }
+  },
+  "clusterClient": {
+    "maxWaitTime": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+    "responseTimeout": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+  },
+  "onClientError": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+}

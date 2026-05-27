@@ -1,0 +1,159 @@
+2026-05-26 21:15:50,658 INFO 43409 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-26 21:15:50,658 INFO 43409 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-26 21:15:50,658 INFO 43409 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-26 21:15:51,021 INFO 43397 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 26048982ms at 2026-05-27 04:30:00.003
+2026-05-26 21:15:51,021 INFO 43397 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 9848979ms at 2026-05-27 00:00:00.000
+2026-05-26 21:15:51,021 INFO 43397 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 9849979ms at 2026-05-27 00:00:01.000
+2026-05-26 21:16:36,714 INFO 43489 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-26 21:16:36,714 INFO 43489 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-26 21:16:36,714 INFO 43489 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-26 21:16:51,355 INFO 43596 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-26 21:16:51,355 INFO 43596 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-26 21:16:51,355 INFO 43596 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-26 21:16:51,721 INFO 43584 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 25988282ms at 2026-05-27 04:30:00.003
+2026-05-26 21:16:51,722 INFO 43584 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 9788279ms at 2026-05-27 00:00:00.001
+2026-05-26 21:16:51,722 INFO 43584 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 9789278ms at 2026-05-27 00:00:01.000
+2026-05-27 16:04:30,122 INFO 5513 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:04:30,122 INFO 5513 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:04:30,122 INFO 5513 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:04:31,094 INFO 5501 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 44728910ms at 2026-05-28 04:30:00.003
+2026-05-27 16:04:31,094 INFO 5501 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 28528906ms at 2026-05-28 00:00:00.000
+2026-05-27 16:04:31,095 INFO 5501 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 28529906ms at 2026-05-28 00:00:01.001
+2026-05-27 16:11:49,780 INFO 6744 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:11:49,780 INFO 6744 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:11:49,780 INFO 6744 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:11:50,278 INFO 6732 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 44289730ms at 2026-05-28 04:30:00.008
+2026-05-27 16:11:50,279 INFO 6732 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 28089721ms at 2026-05-28 00:00:00.000
+2026-05-27 16:11:50,280 INFO 6732 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 28090721ms at 2026-05-28 00:00:01.001
+2026-05-27 16:12:35,331 INFO 6846 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:12:35,331 INFO 6846 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:12:35,331 INFO 6846 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:12:45,322 INFO 6871 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:12:45,323 INFO 6871 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:12:45,323 INFO 6871 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:12:50,518 INFO 6889 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:12:50,518 INFO 6889 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:12:50,518 INFO 6889 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:13:30,831 INFO 6960 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:13:30,831 INFO 6960 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:13:30,831 INFO 6960 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:13:34,674 INFO 6978 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:13:34,674 INFO 6978 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:13:34,674 INFO 6978 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:13:48,167 INFO 7008 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:13:48,167 INFO 7008 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:13:48,167 INFO 7008 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:13:59,142 INFO 7038 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:13:59,142 INFO 7038 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:13:59,142 INFO 7038 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:14:06,362 INFO 7056 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:14:06,362 INFO 7056 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:14:06,362 INFO 7056 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:14:52,637 INFO 7138 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:14:52,637 INFO 7138 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:14:52,637 INFO 7138 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:15:08,973 INFO 7171 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:15:08,973 INFO 7171 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:15:08,973 INFO 7171 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:15:17,081 INFO 7197 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:15:17,081 INFO 7197 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:15:17,081 INFO 7197 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:15:21,816 INFO 7218 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:15:21,816 INFO 7218 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:15:21,816 INFO 7218 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:15:55,912 INFO 7278 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:15:55,912 INFO 7278 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:15:55,912 INFO 7278 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:15:59,427 INFO 7296 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:15:59,427 INFO 7296 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:15:59,427 INFO 7296 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:16:02,246 INFO 7308 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:16:02,246 INFO 7308 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:16:02,246 INFO 7308 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:16:11,648 INFO 7332 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:16:11,648 INFO 7332 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:16:11,648 INFO 7332 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:16:37,594 INFO 7383 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:16:37,594 INFO 7383 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:16:37,594 INFO 7383 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:16:38,815 INFO 7395 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:16:38,815 INFO 7395 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:16:38,815 INFO 7395 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:16:50,037 INFO 7425 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:16:50,037 INFO 7425 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:16:50,037 INFO 7425 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:17:42,175 INFO 7530 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:17:42,175 INFO 7530 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:17:42,175 INFO 7530 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:18:40,126 INFO 7719 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:18:40,127 INFO 7719 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:18:40,127 INFO 7719 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:18:40,806 INFO 7707 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 43879201ms at 2026-05-28 04:30:00.007
+2026-05-27 16:18:40,808 INFO 7707 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 27679193ms at 2026-05-28 00:00:00.001
+2026-05-27 16:18:40,809 INFO 7707 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 27680192ms at 2026-05-28 00:00:01.001
+2026-05-27 16:21:55,836 INFO 8275 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:21:55,836 INFO 8275 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:21:55,837 INFO 8275 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:22:02,615 INFO 8294 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:22:02,615 INFO 8294 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:22:02,615 INFO 8294 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:22:30,566 INFO 8424 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:22:30,566 INFO 8424 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:22:30,566 INFO 8424 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:22:31,190 INFO 8412 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 43648818ms at 2026-05-28 04:30:00.008
+2026-05-27 16:22:31,192 INFO 8412 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 27448809ms at 2026-05-28 00:00:00.001
+2026-05-27 16:22:31,193 INFO 8412 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 27449808ms at 2026-05-28 00:00:01.001
+2026-05-27 16:32:56,581 INFO 9487 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:32:56,582 INFO 9487 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:32:56,582 INFO 9487 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:32:59,217 INFO 9507 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:32:59,217 INFO 9507 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:32:59,218 INFO 9507 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:33:06,449 INFO 9532 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:33:06,449 INFO 9532 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:33:06,449 INFO 9532 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:33:13,683 INFO 9550 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:33:13,683 INFO 9550 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:33:13,683 INFO 9550 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:33:24,406 INFO 9657 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:33:24,406 INFO 9657 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:33:24,406 INFO 9657 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:33:25,038 INFO 9645 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 42994971ms at 2026-05-28 04:30:00.009
+2026-05-27 16:33:25,040 INFO 9645 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 26794962ms at 2026-05-28 00:00:00.001
+2026-05-27 16:33:25,041 INFO 9645 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 26795960ms at 2026-05-28 00:00:01.001
+2026-05-27 16:37:54,321 INFO 10207 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:37:54,322 INFO 10207 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:37:54,322 INFO 10207 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:38:09,307 INFO 10320 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:38:09,307 INFO 10320 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:38:09,308 INFO 10320 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:38:09,928 INFO 10308 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 42710081ms at 2026-05-28 04:30:00.009
+2026-05-27 16:38:09,930 INFO 10308 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 26510071ms at 2026-05-28 00:00:00.001
+2026-05-27 16:38:09,931 INFO 10308 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 26511070ms at 2026-05-28 00:00:01.001
+2026-05-27 16:38:30,528 INFO 10375 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:38:30,528 INFO 10375 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:38:30,528 INFO 10375 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:39:30,009 INFO 10548 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:39:30,009 INFO 10548 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:39:30,009 INFO 10548 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:39:30,582 INFO 10536 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 42629422ms at 2026-05-28 04:30:00.003
+2026-05-27 16:39:30,583 INFO 10536 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 26429418ms at 2026-05-28 00:00:00.001
+2026-05-27 16:39:30,584 INFO 10536 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 26430417ms at 2026-05-28 00:00:01.001
+2026-05-27 16:40:25,080 INFO 10675 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:40:25,080 INFO 10675 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:40:25,080 INFO 10675 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:40:33,641 INFO 10699 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:40:33,641 INFO 10699 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:40:33,641 INFO 10699 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:40:35,525 INFO 10711 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:40:35,525 INFO 10711 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:40:35,525 INFO 10711 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:40:37,390 INFO 10730 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:40:37,390 INFO 10730 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:40:37,390 INFO 10730 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:40:59,784 INFO 10846 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js
+2026-05-27 16:40:59,784 INFO 10846 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js
+2026-05-27 16:40:59,784 INFO 10846 [egg-schedule]: register schedule /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js
+2026-05-27 16:41:00,394 INFO 10834 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-multipart/app/schedule/clean_tmpdir.js next time will execute after 42539614ms at 2026-05-28 04:30:00.008
+2026-05-27 16:41:00,395 INFO 10834 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/clean_log.js next time will execute after 26339606ms at 2026-05-28 00:00:00.001
+2026-05-27 16:41:00,396 INFO 10834 [Timer] /home/gandiantx/lab-manager/server/node_modules/egg-logrotator/app/schedule/rotate_by_file.js next time will execute after 26340605ms at 2026-05-28 00:00:01.001

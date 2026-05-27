@@ -1,0 +1,115 @@
+2026-05-27 16:38:10,657 ERROR 10320 [-/127.0.0.1/-/4ms GET /api/user/list?pageNum=1&pageSize=10] [auth] path=/api/user/list err=SequelizeDatabaseError:You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1
+2026-05-27 16:39:52,352 ERROR 10548 [-/127.0.0.1/-/5ms GET /api/user/list?pageNum=1&pageSize=10] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.select (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async user.findAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1140:21)
+    at async Promise.all (index 1)
+    at async user.findAndCountAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1322:27)
+    at async UserService.list (/home/gandiantx/lab-manager/server/app/service/user.js:37:29)
+    at async UserController.list (/home/gandiantx/lab-manager/server/app/controller/user.js:17:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `id`, `username`, `role`, `create_time` FROM `user` AS `user` ORDER BY `user`.`create_time` DESC LIMIT 0, '10';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `id`, `username`, `role`, `create_time` FROM `user` AS `user` ORDER BY `user`.`create_time` DESC LIMIT 0, '10';"}
+sql: "SELECT `id`, `username`, `role`, `create_time` FROM `user` AS `user` ORDER BY `user`.`create_time` DESC LIMIT 0, '10';"
+parameters: {}
+pid: 10548
+hostname: ATRI
+
+2026-05-27 16:39:52,539 ERROR 10548 [-/127.0.0.1/-/3ms GET /api/user/list?pageNum=1&pageSize=10] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.select (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async user.findAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1140:21)
+    at async Promise.all (index 1)
+    at async user.findAndCountAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1322:27)
+    at async UserService.list (/home/gandiantx/lab-manager/server/app/service/user.js:37:29)
+    at async UserController.list (/home/gandiantx/lab-manager/server/app/controller/user.js:17:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `id`, `username`, `role`, `create_time` FROM `user` AS `user` ORDER BY `user`.`create_time` DESC LIMIT 0, '10';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `id`, `username`, `role`, `create_time` FROM `user` AS `user` ORDER BY `user`.`create_time` DESC LIMIT 0, '10';"}
+sql: "SELECT `id`, `username`, `role`, `create_time` FROM `user` AS `user` ORDER BY `user`.`create_time` DESC LIMIT 0, '10';"
+parameters: {}
+pid: 10548
+hostname: ATRI
+
+2026-05-27 16:39:52,700 ERROR 10548 [-/127.0.0.1/-/7ms GET /api/resource/list?pageNum=1&pageSize=10] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.select (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async resource.findAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1140:21)
+    at async Promise.all (index 1)
+    at async resource.findAndCountAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1322:27)
+    at async ResourceService.list (/home/gandiantx/lab-manager/server/app/service/resource.js:16:29)
+    at async ResourceController.list (/home/gandiantx/lab-manager/server/app/controller/resource.js:11:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `resource`.`id`, `resource`.`name`, `resource`.`category_id`, `resource`.`status`, `resource`.`description`, `resource`.`create_time`, `category`.`id` AS `category.id`, `category`.`name` AS `category.name` FROM `resource` AS `resource` LEFT OUTER JOIN `resource_category` AS `category` ON `resource`.`category_id` = `category`.`id` ORDER BY `resource`.`create_time` DESC LIMIT 0, '10';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `resource`.`id`, `resource`.`name`, `resource`.`category_id`, `resource`.`status`, `resource`.`description`, `resource`.`create_time`, `category`.`id` AS `category.id`, `category`.`name` AS `category.name` FROM `resource` AS `resource` LEFT OUTER JOIN `resource_category` AS `category` ON `resource`.`category_id` = `category`.`id` ORDER BY `resource`.`create_time` DESC LIMIT 0, '10';"}
+sql: "SELECT `resource`.`id`, `resource`.`name`, `resource`.`category_id`, `resource`.`status`, `resource`.`description`, `resource`.`create_time`, `category`.`id` AS `category.id`, `category`.`name` AS `category.name` FROM `resource` AS `resource` LEFT OUTER JOIN `resource_category` AS `category` ON `resource`.`category_id` = `category`.`id` ORDER BY `resource`.`create_time` DESC LIMIT 0, '10';"
+parameters: {}
+pid: 10548
+hostname: ATRI
+
+2026-05-27 16:39:52,854 ERROR 10548 [-/127.0.0.1/-/4ms GET /api/borrow/list?pageNum=1&pageSize=10] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.select (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async borrow_record.findAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1140:21)
+    at async Promise.all (index 1)
+    at async borrow_record.findAndCountAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1322:27)
+    at async BorrowService.list (/home/gandiantx/lab-manager/server/app/service/borrow.js:17:29)
+    at async BorrowController.list (/home/gandiantx/lab-manager/server/app/controller/borrow.js:9:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `borrow_record`.`id`, `borrow_record`.`user_id`, `borrow_record`.`resource_id`, `borrow_record`.`status`, `borrow_record`.`borrow_time`, `borrow_record`.`return_time`, `borrow_record`.`remark`, `borrow_record`.`create_time`, `user`.`id` AS `user.id`, `user`.`username` AS `user.username`, `resource`.`id` AS `resource.id`, `resource`.`name` AS `resource.name` FROM `borrow_record` AS `borrow_record` LEFT OUTER JOIN `user` AS `user` ON `borrow_record`.`user_id` = `user`.`id` LEFT OUTER JOIN `resource` AS `resource` ON `borrow_record`.`resource_id` = `resource`.`id` ORDER BY `borrow_record`.`create_time` DESC LIMIT 0, '10';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `borrow_record`.`id`, `borrow_record`.`user_id`, `borrow_record`.`resource_id`, `borrow_record`.`status`, `borrow_record`.`borrow_time`, `borrow_record`.`return_time`, `borrow_record`.`remark`, `borrow_record`.`create_time`, `user`.`id` AS `user.id`, `user`.`username` AS `user.username`, `resource`.`id` AS `resource.id`, `resource`.`name` AS `resource.name` FROM `borrow_record` AS `borrow_record` LEFT OUTER JOIN `user` AS `user` ON `borrow_record`.`user_id` = `user`.`id` LEFT OUTER JOIN `resource` AS `resource` ON `borrow_record`.`resource_id` = `resource`.`id` ORDER BY `borrow_record`.`create_time` DESC LIMIT 0, '10';"}
+sql: "SELECT `borrow_record`.`id`, `borrow_record`.`user_id`, `borrow_record`.`resource_id`, `borrow_record`.`status`, `borrow_record`.`borrow_time`, `borrow_record`.`return_time`, `borrow_record`.`remark`, `borrow_record`.`create_time`, `user`.`id` AS `user.id`, `user`.`username` AS `user.username`, `resource`.`id` AS `resource.id`, `resource`.`name` AS `resource.name` FROM `borrow_record` AS `borrow_record` LEFT OUTER JOIN `user` AS `user` ON `borrow_record`.`user_id` = `user`.`id` LEFT OUTER JOIN `resource` AS `resource` ON `borrow_record`.`resource_id` = `resource`.`id` ORDER BY `borrow_record`.`create_time` DESC LIMIT 0, '10';"
+parameters: {}
+pid: 10548
+hostname: ATRI
+
+2026-05-27 16:39:53,002 ERROR 10548 [-/127.0.0.1/-/2ms GET /api/notice/list?pageNum=1&pageSize=10] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.select (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async notice.findAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1140:21)
+    at async Promise.all (index 1)
+    at async notice.findAndCountAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1322:27)
+    at async NoticeService.list (/home/gandiantx/lab-manager/server/app/service/notice.js:9:29)
+    at async NoticeController.list (/home/gandiantx/lab-manager/server/app/controller/notice.js:9:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `id`, `title`, `content`, `create_time` FROM `notice` AS `notice` ORDER BY `notice`.`create_time` DESC LIMIT 0, '10';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `id`, `title`, `content`, `create_time` FROM `notice` AS `notice` ORDER BY `notice`.`create_time` DESC LIMIT 0, '10';"}
+sql: "SELECT `id`, `title`, `content`, `create_time` FROM `notice` AS `notice` ORDER BY `notice`.`create_time` DESC LIMIT 0, '10';"
+parameters: {}
+pid: 10548
+hostname: ATRI
+
+2026-05-27 16:40:01,202 ERROR 10548 [-/127.0.0.1/-/3ms GET /api/user/list?pageNum=1&pageSize=10] nodejs.SequelizeDatabaseError: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.select (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async user.findAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1140:21)
+    at async Promise.all (index 1)
+    at async user.findAndCountAll (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1322:27)
+    at async UserService.list (/home/gandiantx/lab-manager/server/app/service/user.js:37:29)
+    at async UserController.list (/home/gandiantx/lab-manager/server/app/controller/user.js:17:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+name: "SequelizeDatabaseError"
+parent: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `id`, `username`, `role`, `create_time` FROM `user` AS `user` ORDER BY `user`.`create_time` DESC LIMIT 0, '10';"}
+original: {"code":"ER_PARSE_ERROR","errno":1064,"sqlState":"42000","sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''10'' at line 1","sql":"SELECT `id`, `username`, `role`, `create_time` FROM `user` AS `user` ORDER BY `user`.`create_time` DESC LIMIT 0, '10';"}
+sql: "SELECT `id`, `username`, `role`, `create_time` FROM `user` AS `user` ORDER BY `user`.`create_time` DESC LIMIT 0, '10';"
+parameters: {}
+pid: 10548
+hostname: ATRI
+

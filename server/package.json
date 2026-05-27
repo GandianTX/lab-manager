@@ -1,0 +1,33 @@
+{
+  "name": "lab-manager-server",
+  "version": "1.0.0",
+  "description": "高校实验资源协同管理平台 - 后端服务",
+  "private": true,
+  "egg": {
+    "declarations": true
+  },
+  "scripts": {
+    "dev": "egg-bin dev",
+    "start": "egg-scripts start --daemon --title=lab-manager-server",
+    "stop": "egg-scripts stop --title=lab-manager-server",
+    "db:init": "node app/database/init.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "egg": "^3.17.4",
+    "egg-cors": "^2.2.3",
+    "egg-jwt": "^2.0.0",
+    "egg-scripts": "^2.17.0",
+    "egg-sequelize": "^6.0.0",
+    "egg-validate": "^2.0.0",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.9.0"
+  },
+  "devDependencies": {
+    "egg-bin": "^6.6.0",
+    "egg-mock": "^5.11.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
