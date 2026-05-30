@@ -113,3 +113,1424 @@ parameters: {}
 pid: 10548
 hostname: ATRI
 
+2026-05-30 09:40:18,248 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,250 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,265 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,269 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,276 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,278 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,279 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,282 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,288 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,245 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,246 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,247 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,245 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,246 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,247 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,248 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,245 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,246 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,247 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,239 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,239 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:15,618 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,620 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,636 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,644 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,648 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,651 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,659 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,659 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,660 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:33,450 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,462 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,465 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,467 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,474 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,476 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,477 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,479 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,485 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,446 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,447 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,448 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,449 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,449 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,450 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,452 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,453 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,454 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:59:27,905 ERROR 27746 [-/127.0.0.1/-/15ms POST /api/borrow/create] nodejs.SequelizeForeignKeyConstraintError: Cannot add or update a child row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_45` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.insert (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:308:21)
+    at async model.save (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:2490:35)
+    at async borrow_record.create (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:1362:12)
+    at async BorrowService.create (/home/gandiantx/lab-manager/server/app/service/borrow.js:40:20)
+    at async BorrowController.create (/home/gandiantx/lab-manager/server/app/controller/borrow.js:20:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+    at async /home/gandiantx/lab-manager/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:7:50
+name: "SequelizeForeignKeyConstraintError"
+parent: {"code":"ER_NO_REFERENCED_ROW_2","errno":1452,"sqlState":"23000","sqlMessage":"Cannot add or update a child row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_45` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)","sql":"INSERT INTO `borrow_record` (`id`,`user_id`,`resource_id`,`status`,`borrow_time`,`remark`,`create_time`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":[4,1,"pending","2026-05-30 09:59:27","111","2026-05-30 09:59:27"]}
+original: {"code":"ER_NO_REFERENCED_ROW_2","errno":1452,"sqlState":"23000","sqlMessage":"Cannot add or update a child row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_45` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)","sql":"INSERT INTO `borrow_record` (`id`,`user_id`,`resource_id`,`status`,`borrow_time`,`remark`,`create_time`) VALUES (DEFAULT,?,?,?,?,?,?);","parameters":[4,1,"pending","2026-05-30 09:59:27","111","2026-05-30 09:59:27"]}
+sql: "INSERT INTO `borrow_record` (`id`,`user_id`,`resource_id`,`status`,`borrow_time`,`remark`,`create_time`) VALUES (DEFAULT,?,?,?,?,?,?);"
+parameters: [4,1,"pending","2026-05-30 09:59:27","111","2026-05-30 09:59:27"]
+table: "user"
+fields: ["user_id"]
+value: 4
+index: "borrow_record_ibfk_45"
+reltype: "child"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 27746
+hostname: ATRI
+
+2026-05-30 10:11:12,207 ERROR 30517 [-/127.0.0.1/-/12ms DELETE /api/user/delete/2] nodejs.SequelizeForeignKeyConstraintError: Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.delete (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:393:12)
+    at async model.destroy (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:2627:16)
+    at async UserService.delete (/home/gandiantx/lab-manager/server/app/service/user.js:95:5)
+    at async UserController.delete (/home/gandiantx/lab-manager/server/app/controller/user.js:59:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+    at async /home/gandiantx/lab-manager/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:7:50
+    at async xframe (/home/gandiantx/lab-manager/server/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+name: "SequelizeForeignKeyConstraintError"
+parent: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)","sql":"DELETE FROM `user` WHERE `id` = 2"}
+original: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)","sql":"DELETE FROM `user` WHERE `id` = 2"}
+sql: "DELETE FROM `user` WHERE `id` = 2"
+parameters: {}
+table: "user"
+fields: ["user_id"]
+value: undefined
+index: "borrow_record_ibfk_59"
+reltype: "parent"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30517
+hostname: ATRI
+
+2026-05-30 10:11:20,550 ERROR 30517 [-/127.0.0.1/-/6ms DELETE /api/user/delete/2] nodejs.SequelizeForeignKeyConstraintError: Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.delete (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:393:12)
+    at async model.destroy (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:2627:16)
+    at async UserService.delete (/home/gandiantx/lab-manager/server/app/service/user.js:95:5)
+    at async UserController.delete (/home/gandiantx/lab-manager/server/app/controller/user.js:59:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+    at async /home/gandiantx/lab-manager/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:7:50
+    at async xframe (/home/gandiantx/lab-manager/server/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+name: "SequelizeForeignKeyConstraintError"
+parent: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)","sql":"DELETE FROM `user` WHERE `id` = 2"}
+original: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)","sql":"DELETE FROM `user` WHERE `id` = 2"}
+sql: "DELETE FROM `user` WHERE `id` = 2"
+parameters: {}
+table: "user"
+fields: ["user_id"]
+value: undefined
+index: "borrow_record_ibfk_59"
+reltype: "parent"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30517
+hostname: ATRI
+
+2026-05-30 10:12:51,108 ERROR 30517 [-/127.0.0.1/-/7ms DELETE /api/user/delete/2] nodejs.SequelizeForeignKeyConstraintError: Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.delete (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:393:12)
+    at async model.destroy (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:2627:16)
+    at async UserService.delete (/home/gandiantx/lab-manager/server/app/service/user.js:95:5)
+    at async UserController.delete (/home/gandiantx/lab-manager/server/app/controller/user.js:59:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+    at async /home/gandiantx/lab-manager/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:7:50
+    at async xframe (/home/gandiantx/lab-manager/server/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+name: "SequelizeForeignKeyConstraintError"
+parent: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)","sql":"DELETE FROM `user` WHERE `id` = 2"}
+original: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)","sql":"DELETE FROM `user` WHERE `id` = 2"}
+sql: "DELETE FROM `user` WHERE `id` = 2"
+parameters: {}
+table: "user"
+fields: ["user_id"]
+value: undefined
+index: "borrow_record_ibfk_59"
+reltype: "parent"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30517
+hostname: ATRI
+
+2026-05-30 10:12:56,890 ERROR 30517 [-/127.0.0.1/-/6ms DELETE /api/user/delete/2] nodejs.SequelizeForeignKeyConstraintError: Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)
+    at Query.run (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/mysql/query.js:52:25)
+    at /home/gandiantx/lab-manager/server/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async MySQLQueryInterface.delete (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/dialects/abstract/query-interface.js:393:12)
+    at async model.destroy (/home/gandiantx/lab-manager/server/node_modules/sequelize/lib/model.js:2627:16)
+    at async UserService.delete (/home/gandiantx/lab-manager/server/app/service/user.js:95:5)
+    at async UserController.delete (/home/gandiantx/lab-manager/server/app/controller/user.js:59:20)
+    at async auth (/home/gandiantx/lab-manager/server/app/middleware/auth.js:24:5)
+    at async /home/gandiantx/lab-manager/server/node_modules/egg-development/app/middleware/egg_loader_trace.js:7:50
+    at async xframe (/home/gandiantx/lab-manager/server/node_modules/egg-security/lib/middlewares/xframe.js:7:5)
+name: "SequelizeForeignKeyConstraintError"
+parent: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)","sql":"DELETE FROM `user` WHERE `id` = 2"}
+original: {"code":"ER_ROW_IS_REFERENCED_2","errno":1451,"sqlState":"23000","sqlMessage":"Cannot delete or update a parent row: a foreign key constraint fails (`lab_manager`.`borrow_record`, CONSTRAINT `borrow_record_ibfk_59` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE CASCADE)","sql":"DELETE FROM `user` WHERE `id` = 2"}
+sql: "DELETE FROM `user` WHERE `id` = 2"
+parameters: {}
+table: "user"
+fields: ["user_id"]
+value: undefined
+index: "borrow_record_ibfk_59"
+reltype: "parent"
+headers: {"Access-Control-Allow-Origin":"*","vary":"Origin"}
+pid: 30517
+hostname: ATRI
+

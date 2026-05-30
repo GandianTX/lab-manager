@@ -45,6 +45,13 @@ class UserController extends Controller {
     ctx.success(result);
   }
 
+  /** PUT /api/user/profile — 自助修改个人信息 */
+  async profile() {
+    const { ctx } = this;
+    const result = await ctx.service.user.update(ctx.state.user.id, ctx.request.body);
+    ctx.success(result);
+  }
+
   /** DELETE /api/user/delete/:id */
   async delete() {
     const { ctx } = this;

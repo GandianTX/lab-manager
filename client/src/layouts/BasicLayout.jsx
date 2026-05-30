@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { Layout, Menu, Button, Dropdown, theme } from 'antd';
 import {
@@ -7,20 +7,30 @@ import {
   ToolOutlined,
   ScheduleOutlined,
   NotificationOutlined,
-  LogoutOutlined,
   UserOutlined,
+  LogoutOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
 } from '@ant-design/icons';
 
 const { Header, Sider, Content } = Layout;
 
-const menuItems = [
+/** admin 菜单 */
+const adminMenuItems = [
   { key: '/dashboard',  icon: <DashboardOutlined />,  label: '首页' },
   { key: '/user',       icon: <TeamOutlined />,        label: '用户管理' },
   { key: '/resource',   icon: <ToolOutlined />,         label: '资源管理' },
   { key: '/borrow',     icon: <ScheduleOutlined />,     label: '借用管理' },
   { key: '/notice',     icon: <NotificationOutlined />, label: '公告管理' },
+];
+
+/** user 菜单 */
+const userMenuItems = [
+  { key: '/dashboard',  icon: <DashboardOutlined />,  label: '首页' },
+  { key: '/profile',    icon: <UserOutlined />,        label: '个人信息' },
+  { key: '/resource',   icon: <ToolOutlined />,         label: '资源浏览' },
+  { key: '/borrow',     icon: <ScheduleOutlined />,     label: '我的借用' },
+  { key: '/notice',     icon: <NotificationOutlined />, label: '公告浏览' },
 ];
 
 export default function BasicLayout() {
@@ -29,15 +39,21 @@ export default function BasicLayout() {
   const location = useLocation();
   const { token: themeToken } = theme.useToken();
 
-  const user = JSON.parse(localStorage.getItem('user') || '{}');
+  const user = useMemo(() => {
+    try { return JSON.parse(localStorage.getItem('user') || '{}'); }
+    catch { return {}; }
+  }, []);
+
+  const isAdmin = user.role === 'admin';
+  const menuItems = isAdmin ? adminMenuItems : userMenuItems;
 
   const handleLogout = () => {
     localStorage.clear();
     navigate('/login', { replace: true });
   };
 
-  const userMenuItems = [
-    { key: 'role', label: `角色：${user.role === 'admin' ? '管理员' : '普通用户'}`, disabled: true },
+  const userMenuDropdownItems = [
+    { key: 'role', label: `角色：${isAdmin ? '管理员' : '普通用户'}`, disabled: true },
     { type: 'divider' },
     { key: 'logout', icon: <LogoutOutlined />, label: '退出登录', danger: true },
   ];
@@ -63,7 +79,7 @@ export default function BasicLayout() {
         }}>
           <Button type="text" icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
             onClick={() => setCollapsed(!collapsed)} />
-          <Dropdown menu={{ items: userMenuItems, onClick: ({ key }) => key === 'logout' && handleLogout() }}>
+          <Dropdown menu={{ items: userMenuDropdownItems, onClick: ({ key }) => key === 'logout' && handleLogout() }}>
             <div style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: 8 }}>
               <UserOutlined style={{ fontSize: 18 }} />
               <span>{user.username}</span>

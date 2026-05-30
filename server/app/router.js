@@ -9,6 +9,7 @@ module.exports = app => {
   // ═══ 第二阶段：用户管理 ═══
   router.get('/api/user/list', controller.user.list);
   router.get('/api/user/info', controller.user.info);
+  router.put('/api/user/profile', controller.user.profile);
   router.post('/api/user/create', controller.user.create);
   router.put('/api/user/update/:id', controller.user.update);
   router.delete('/api/user/delete/:id', controller.user.delete);

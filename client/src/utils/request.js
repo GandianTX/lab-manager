@@ -37,11 +37,15 @@ request.interceptors.response.use(
       // 401 未登录 → 跳转登录页
       if (status === 401) {
         localStorage.clear();
-        // 避免在 login 页面重复跳转
         if (window.location.pathname !== '/login') {
           window.location.href = '/login';
         }
         return Promise.reject(new Error('未登录'));
+      }
+      // 403 无权限
+      if (status === 403) {
+        message.error(error.response.data?.message || '无操作权限');
+        return Promise.reject(new Error('无权限'));
       }
       // 其他 HTTP 错误
       const msg = error.response.data?.message || `请求错误 (${status})`;

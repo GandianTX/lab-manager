@@ -40,6 +40,18 @@
   {
     "name": null,
     "methods": [
+      "PUT"
+    ],
+    "paramNames": [],
+    "path": "/api/user/profile",
+    "regexp": "/^\\/api\\/user\\/profile(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
       "POST"
     ],
     "paramNames": [],

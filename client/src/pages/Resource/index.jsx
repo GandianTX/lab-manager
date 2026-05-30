@@ -19,11 +19,13 @@ export default function ResourceManage() {
   const [categories, setCategories] = useState([]);
   const [form] = Form.useForm();
 
-  // ─── 分类弹窗
   const [catModalOpen, setCatModalOpen] = useState(false);
   const [editingCat, setEditingCat] = useState(null);
   const [catData, setCatData] = useState([]);
   const [catForm] = Form.useForm();
+
+  const userInfo = JSON.parse(localStorage.getItem('user') || '{}');
+  const isAdmin = userInfo.role === 'admin';
 
   useEffect(() => { fetchData(); fetchCats(); }, []);
 
@@ -48,7 +50,8 @@ export default function ResourceManage() {
   const handleEdit = (r) => { setEditingRecord(r); form.setFieldsValue(r); setModalOpen(true); };
 
   const handleDelete = async (id) => {
-    try { await deleteResource(id); message.success('删除成功'); fetchData(pagination.current, pagination.pageSize, searchKeyword); } catch { /* handled */ }
+    try { await deleteResource(id); message.success('删除成功'); fetchData(pagination.current, pagination.pageSize, searchKeyword); }
+    catch { /* handled */ }
   };
 
   const handleSubmit = async () => {
@@ -61,7 +64,7 @@ export default function ResourceManage() {
     } catch { /* handled */ }
   };
 
-  // ─── 分类操作
+  // 分类操作（admin only）
   const handleCatAdd = () => { setEditingCat(null); catForm.resetFields(); setCatModalOpen(true); };
   const handleCatEdit = (r) => { setEditingCat(r); catForm.setFieldsValue(r); setCatModalOpen(true); };
   const handleCatDelete = async (id) => {
@@ -83,7 +86,7 @@ export default function ResourceManage() {
     { title: '状态', dataIndex: 'status', width: 90, render: s => <Tag color={statusColors[s]}>{statusMap[s]}</Tag> },
     { title: '描述', dataIndex: 'description', ellipsis: true },
     { title: '创建时间', dataIndex: 'create_time', width: 170 },
-    {
+    ...(isAdmin ? [{
       title: '操作', width: 150, fixed: 'right',
       render: (_, r) => (
         <Space>
@@ -93,14 +96,14 @@ export default function ResourceManage() {
           </Popconfirm>
         </Space>
       ),
-    },
+    }] : []),
   ];
 
   const catColumns = [
     { title: 'ID', dataIndex: 'id', width: 60 },
     { title: '分类名称', dataIndex: 'name' },
     { title: '备注', dataIndex: 'remark' },
-    {
+    ...(isAdmin ? [{
       title: '操作', width: 150,
       render: (_, r) => (
         <Space>
@@ -110,67 +113,74 @@ export default function ResourceManage() {
           </Popconfirm>
         </Space>
       ),
+    }] : []),
+  ];
+
+  // Tab 配置
+  const tabItems = [
+    {
+      key: 'resource', label: isAdmin ? '资源列表' : '资源浏览',
+      children: (
+        <>
+          <Space style={{ marginBottom: 16 }}>
+            <Input.Search placeholder="搜索资源名称" value={searchKeyword}
+              onChange={e => setSearchKeyword(e.target.value)}
+              onSearch={() => fetchData(1, pagination.pageSize, searchKeyword)}
+              style={{ width: 240 }} enterButton={<SearchOutlined />} />
+            <Select placeholder="按分类筛选" allowClear style={{ width: 150 }}
+              options={categories} onChange={v => fetchData(1, pagination.pageSize, searchKeyword)} />
+            {isAdmin && <Button type="primary" icon={<PlusOutlined />} onClick={handleAdd}>新增资源</Button>}
+          </Space>
+          <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
+            pagination={pagination} onChange={p => fetchData(p.current, p.pageSize, searchKeyword)}
+            scroll={{ x: 900 }} />
+        </>
+      ),
     },
+    ...(isAdmin ? [{
+      key: 'category', label: '分类管理',
+      children: (
+        <>
+          <Button type="primary" icon={<PlusOutlined />} onClick={handleCatAdd} style={{ marginBottom: 16 }}>新增分类</Button>
+          <Table rowKey="id" columns={catColumns} dataSource={catData} pagination={false} />
+        </>
+      ),
+    }] : []),
   ];
 
   return (
     <div>
-      <h2 style={{ marginBottom: 16 }}>资源管理</h2>
-      <Tabs defaultActiveKey="resource" items={[
-        {
-          key: 'resource', label: '资源列表',
-          children: (
-            <>
-              <Space style={{ marginBottom: 16 }}>
-                <Input.Search placeholder="搜索资源名称" value={searchKeyword}
-                  onChange={e => setSearchKeyword(e.target.value)}
-                  onSearch={() => fetchData(1, pagination.pageSize, searchKeyword)}
-                  style={{ width: 240 }} enterButton={<SearchOutlined />} />
-                <Select placeholder="按分类筛选" allowClear style={{ width: 150 }}
-                  options={categories} onChange={v => fetchData(1, pagination.pageSize, searchKeyword)} />
-                <Button type="primary" icon={<PlusOutlined />} onClick={handleAdd}>新增资源</Button>
-              </Space>
-              <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
-                pagination={pagination} onChange={p => fetchData(p.current, p.pageSize, searchKeyword)}
-                scroll={{ x: 900 }} />
-            </>
-          ),
-        },
-        {
-          key: 'category', label: '分类管理',
-          children: (
-            <>
-              <Button type="primary" icon={<PlusOutlined />} onClick={handleCatAdd} style={{ marginBottom: 16 }}>新增分类</Button>
-              <Table rowKey="id" columns={catColumns} dataSource={catData} pagination={false} />
-            </>
-          ),
-        },
-      ]} />
+      <h2 style={{ marginBottom: 16 }}>{isAdmin ? '资源管理' : '资源浏览'}</h2>
+      <Tabs defaultActiveKey="resource" items={tabItems} />
 
-      {/* 资源弹窗 */}
-      <Modal title={editingRecord ? '编辑资源' : '新增资源'} open={modalOpen}
-        onOk={handleSubmit} onCancel={() => setModalOpen(false)} destroyOnClose>
-        <Form form={form} layout="vertical">
-          <Form.Item name="name" label="资源名称" rules={[{ required: true }]}><Input /></Form.Item>
-          <Form.Item name="category_id" label="所属分类" rules={[{ required: true }]}>
-            <Select options={categories} /></Form.Item>
-          <Form.Item name="description" label="描述"><Input.TextArea rows={3} /></Form.Item>
-          {editingRecord && (
-            <Form.Item name="status" label="状态">
-              <Select options={[{ value: 'idle', label: '空闲' }, { value: 'borrowed', label: '已借出' }, { value: 'repair', label: '维修中' }]} />
-            </Form.Item>
-          )}
-        </Form>
-      </Modal>
+      {/* 资源弹窗（admin only） */}
+      {isAdmin && (
+        <Modal title={editingRecord ? '编辑资源' : '新增资源'} open={modalOpen}
+          onOk={handleSubmit} onCancel={() => setModalOpen(false)} destroyOnClose>
+          <Form form={form} layout="vertical">
+            <Form.Item name="name" label="资源名称" rules={[{ required: true }]}><Input /></Form.Item>
+            <Form.Item name="category_id" label="所属分类" rules={[{ required: true }]}>
+              <Select options={categories} /></Form.Item>
+            <Form.Item name="description" label="描述"><Input.TextArea rows={3} /></Form.Item>
+            {editingRecord && (
+              <Form.Item name="status" label="状态">
+                <Select options={[{ value: 'idle', label: '空闲' }, { value: 'borrowed', label: '已借出' }, { value: 'repair', label: '维修中' }]} />
+              </Form.Item>
+            )}
+          </Form>
+        </Modal>
+      )}
 
-      {/* 分类弹窗 */}
-      <Modal title={editingCat ? '编辑分类' : '新增分类'} open={catModalOpen}
-        onOk={handleCatSubmit} onCancel={() => setCatModalOpen(false)} destroyOnClose>
-        <Form form={catForm} layout="vertical">
-          <Form.Item name="name" label="分类名称" rules={[{ required: true }]}><Input /></Form.Item>
-          <Form.Item name="remark" label="备注"><Input /></Form.Item>
-        </Form>
-      </Modal>
+      {/* 分类弹窗（admin only） */}
+      {isAdmin && (
+        <Modal title={editingCat ? '编辑分类' : '新增分类'} open={catModalOpen}
+          onOk={handleCatSubmit} onCancel={() => setCatModalOpen(false)} destroyOnClose>
+          <Form form={catForm} layout="vertical">
+            <Form.Item name="name" label="分类名称" rules={[{ required: true }]}><Input /></Form.Item>
+            <Form.Item name="remark" label="备注"><Input /></Form.Item>
+          </Form>
+        </Modal>
+      )}
     </div>
   );
 }

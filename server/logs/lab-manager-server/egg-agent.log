@@ -764,3 +764,1642 @@
                                            ▇ [16ms] - #51 Load "Symbol(model)" to Application
                                              ▇▇▇▇ [67ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
 2026-05-27 16:40:59,279 INFO 10834 [egg:core] dump config after ready, 4ms
+2026-05-30 09:40:18,280 INFO 11049 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-05-30 09:40:17,882 INFO 11049 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-05-30 09:40:18,204 INFO 11049 [egg:core] dump config after load, 5ms
+2026-05-30 09:40:18,240 INFO 11049 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-05-30 09:40:18,240 INFO 11049 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-05-30 09:40:18,240 INFO 11049 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-05-30 09:40:18,241 INFO 11049 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-05-30 09:40:18,241 INFO 11049 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-05-30 09:40:18,241 INFO 11049 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-05-30 09:40:18,241 INFO 11049 [egg-watcher:agent] watcher start success
+2026-05-30 09:40:18,249 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,250 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,265 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,269 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,276 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,278 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,279 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,282 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:40:18,287 INFO 11049 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [413ms] - #0 Process Start
+                      ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [520ms] - #1 Application Start
+                      ▇ [6ms] - #2 Load Plugin
+                      ▇ [10ms] - #3 Load Config
+                      ▇ [0ms] - #4 Require(0) config/config.default.js
+                      ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                      ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                      ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                      ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                      ▇ [1ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                      ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                      ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                      ▇ [1ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                      ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                      ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                       ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                       ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                       ▇ [0ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                       ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                       ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                       ▇ [0ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                       ▇ [0ms] - #21 Require(17) config/config.default.js
+                       ▇ [0ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                       ▇ [0ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                       ▇ [0ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                       ▇ [0ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                       ▇▇ [51ms] - #26 Load extend/agent.js
+                       ▇ [0ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                       ▇▇ [47ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                         ▇ [1ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                         ▇ [27ms] - #30 Load extend/context.js
+                         ▇ [8ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                          ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                          ▇ [1ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                          ▇ [12ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                           ▇ [1ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                           ▇ [1ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                           ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                           ▇ [0ms] - #38 Require(32) app/extend/context.js
+                           ▇ [16ms] - #39 Load agent.js
+                           ▇ [0ms] - #40 Require(33) node_modules/egg-security/agent.js
+                           ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                           ▇ [4ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                           ▇ [1ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                           ▇ [6ms] - #44 Require(37) node_modules/egg-development/agent.js
+                            ▇ [0ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                            ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                            ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                            ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [356ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                            ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [340ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                            ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [389ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                            ▇ [18ms] - #51 Load "Symbol(model)" to Application
+                                             ▇▇▇▇ [82ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-05-30 09:40:18,287 INFO 11049 [egg:core] dump config after ready, 4ms
+2026-05-30 09:40:18,288 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,245 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,246 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,246 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:41:18,247 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,245 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,246 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,247 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:42:18,248 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,245 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,246 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:43:18,247 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,239 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,239 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:44:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:15,650 INFO 22170 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-05-30 09:45:15,346 INFO 22170 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-05-30 09:45:15,578 INFO 22170 [egg:core] dump config after load, 6ms
+2026-05-30 09:45:15,614 INFO 22170 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-05-30 09:45:15,614 INFO 22170 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-05-30 09:45:15,614 INFO 22170 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-05-30 09:45:15,614 INFO 22170 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-05-30 09:45:15,615 INFO 22170 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-05-30 09:45:15,615 INFO 22170 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-05-30 09:45:15,615 INFO 22170 [egg-watcher:agent] watcher start success
+2026-05-30 09:45:15,620 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,621 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,636 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,644 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,649 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,652 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,658 INFO 22170 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [406ms] - #0 Process Start
+                         ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [396ms] - #1 Application Start
+                         ▇ [7ms] - #2 Load Plugin
+                         ▇ [11ms] - #3 Load Config
+                         ▇ [0ms] - #4 Require(0) config/config.default.js
+                          ▇ [1ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                          ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                          ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                          ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                          ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                          ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                          ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                          ▇ [1ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                          ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                          ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                          ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                          ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                          ▇ [1ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                          ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                          ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                          ▇ [1ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                          ▇ [0ms] - #21 Require(17) config/config.default.js
+                          ▇ [0ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                          ▇ [0ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                          ▇ [0ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                          ▇ [0ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                          ▇▇ [37ms] - #26 Load extend/agent.js
+                          ▇ [0ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                          ▇▇ [34ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                            ▇ [1ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                            ▇ [15ms] - #30 Load extend/context.js
+                            ▇ [4ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                             ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                             ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                             ▇ [6ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                             ▇ [1ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                             ▇ [0ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                             ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                             ▇ [1ms] - #38 Require(32) app/extend/context.js
+                             ▇ [9ms] - #39 Load agent.js
+                             ▇ [0ms] - #40 Require(33) node_modules/egg-security/agent.js
+                             ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                             ▇ [3ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                              ▇ [0ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                              ▇ [3ms] - #44 Require(37) node_modules/egg-development/agent.js
+                              ▇ [0ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                              ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                              ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                              ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [266ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                              ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [251ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                              ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [298ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                           ▇ [21ms] - #51 Load "Symbol(model)" to Application
+                                            ▇▇▇▇ [80ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-05-30 09:45:15,658 INFO 22170 [egg:core] dump config after ready, 5ms
+2026-05-30 09:45:15,659 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,659 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:15,660 ERROR 22170 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 22170
+hostname: ATRI
+
+2026-05-30 09:45:18,240 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,241 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,242 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,243 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:18,244 ERROR 11049 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 11049
+hostname: ATRI
+
+2026-05-30 09:45:33,478 INFO 23093 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-05-30 09:45:33,190 INFO 23093 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-05-30 09:45:33,412 INFO 23093 [egg:core] dump config after load, 5ms
+2026-05-30 09:45:33,445 INFO 23093 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-05-30 09:45:33,446 INFO 23093 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-05-30 09:45:33,446 INFO 23093 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-05-30 09:45:33,446 INFO 23093 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-05-30 09:45:33,446 INFO 23093 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-05-30 09:45:33,446 INFO 23093 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-05-30 09:45:33,447 INFO 23093 [egg-watcher:agent] watcher start success
+2026-05-30 09:45:33,451 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,463 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,465 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,467 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,474 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,476 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,478 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,480 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:45:33,485 INFO 23093 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [402ms] - #0 Process Start
+                         ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [379ms] - #1 Application Start
+                          ▇ [6ms] - #2 Load Plugin
+                          ▇ [10ms] - #3 Load Config
+                          ▇ [0ms] - #4 Require(0) config/config.default.js
+                          ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                          ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                          ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                          ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                          ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                          ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                          ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                          ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                          ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                          ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                          ▇ [1ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                          ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                          ▇ [0ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                          ▇ [1ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                          ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                          ▇ [0ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                           ▇ [0ms] - #21 Require(17) config/config.default.js
+                           ▇ [0ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                           ▇ [0ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                           ▇ [0ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                           ▇ [0ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                           ▇▇ [36ms] - #26 Load extend/agent.js
+                           ▇ [1ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                           ▇▇ [32ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                             ▇ [1ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                             ▇ [17ms] - #30 Load extend/context.js
+                             ▇ [7ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                             ▇ [0ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                             ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                             ▇ [6ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                              ▇ [0ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                              ▇ [0ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                              ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                              ▇ [0ms] - #38 Require(32) app/extend/context.js
+                              ▇ [9ms] - #39 Load agent.js
+                              ▇ [1ms] - #40 Require(33) node_modules/egg-security/agent.js
+                              ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                              ▇ [2ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                              ▇ [0ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                              ▇ [4ms] - #44 Require(37) node_modules/egg-development/agent.js
+                               ▇ [0ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                               ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                               ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [254ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [238ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [278ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                           ▇ [17ms] - #51 Load "Symbol(model)" to Application
+                                             ▇▇▇▇ [72ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-05-30 09:45:33,485 INFO 23093 [egg:core] dump config after ready, 5ms
+2026-05-30 09:45:33,485 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,446 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app"
+filename: "/home/gandiantx/lab-manager/server/app"
+dir: "/home/gandiantx/lab-manager/server/app"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,447 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/config'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/config"
+filename: "/home/gandiantx/lab-manager/server/config"
+dir: "/home/gandiantx/lab-manager/server/config"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,448 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/controller'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/controller"
+filename: "/home/gandiantx/lab-manager/server/app/controller"
+dir: "/home/gandiantx/lab-manager/server/app/controller"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,449 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/database'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/database"
+filename: "/home/gandiantx/lab-manager/server/app/database"
+dir: "/home/gandiantx/lab-manager/server/app/database"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,450 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/extend'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/extend"
+filename: "/home/gandiantx/lab-manager/server/app/extend"
+dir: "/home/gandiantx/lab-manager/server/app/extend"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,451 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/middleware'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/middleware"
+filename: "/home/gandiantx/lab-manager/server/app/middleware"
+dir: "/home/gandiantx/lab-manager/server/app/middleware"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,452 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/model'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/model"
+filename: "/home/gandiantx/lab-manager/server/app/model"
+dir: "/home/gandiantx/lab-manager/server/app/model"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,453 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/public'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:90:12
+    at FSReqCallback.oncomplete (node:fs:185:23)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/public"
+filename: "/home/gandiantx/lab-manager/server/app/public"
+dir: "/home/gandiantx/lab-manager/server/app/public"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:46:33,454 ERROR 23093 nodejs.ENOSPCError: ENOSPC: System limit for number of file watchers reached, watch '/home/gandiantx/lab-manager/server/app/service'
+    at FSWatcher.<computed> (node:internal/fs/watchers:316:19)
+    at Object.watch (node:fs:2537:36)
+    at Walk.<anonymous> (/home/gandiantx/lab-manager/server/node_modules/wt/index.js:183:20)
+    at Walk.emit (node:events:508:28)
+    at /home/gandiantx/lab-manager/server/node_modules/ndir/lib/ndir.js:107:16
+    at FSReqCallback.oncomplete (node:fs:196:5)
+errno: -28
+syscall: "watch"
+code: "ENOSPC"
+path: "/home/gandiantx/lab-manager/server/app/service"
+filename: "/home/gandiantx/lab-manager/server/app/service"
+dir: "/home/gandiantx/lab-manager/server/app/service"
+pid: 23093
+hostname: ATRI
+
+2026-05-30 09:48:29,122 INFO 27734 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2026-05-30 09:48:28,848 INFO 27734 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-05-30 09:48:29,061 INFO 27734 [egg:core] dump config after load, 4ms
+2026-05-30 09:48:29,089 INFO 27734 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-05-30 09:48:29,089 INFO 27734 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-05-30 09:48:29,090 INFO 27734 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-05-30 09:48:29,090 INFO 27734 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-05-30 09:48:29,090 INFO 27734 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-05-30 09:48:29,090 INFO 27734 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-05-30 09:48:29,090 INFO 27734 [egg-watcher:agent] watcher start success
+2026-05-30 09:48:29,128 INFO 27734 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [402ms] - #0 Process Start
+                          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [359ms] - #1 Application Start
+                          ▇ [6ms] - #2 Load Plugin
+                           ▇ [10ms] - #3 Load Config
+                           ▇ [0ms] - #4 Require(0) config/config.default.js
+                           ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                           ▇ [1ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                           ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                           ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                           ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                           ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                           ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                           ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                           ▇ [1ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                           ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                           ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                           ▇ [1ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                           ▇ [0ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                           ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                           ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                           ▇ [0ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                           ▇ [0ms] - #21 Require(17) config/config.default.js
+                           ▇ [0ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                           ▇ [0ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                           ▇ [0ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                           ▇ [1ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                           ▇▇ [33ms] - #26 Load extend/agent.js
+                           ▇ [0ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                           ▇ [30ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                             ▇ [0ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                             ▇ [16ms] - #30 Load extend/context.js
+                             ▇ [4ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                              ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                              ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                              ▇ [7ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                              ▇ [1ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                              ▇ [0ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                              ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                              ▇ [0ms] - #38 Require(32) app/extend/context.js
+                              ▇ [10ms] - #39 Load agent.js
+                              ▇ [0ms] - #40 Require(33) node_modules/egg-security/agent.js
+                              ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                              ▇ [5ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                               ▇ [0ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                               ▇ [4ms] - #44 Require(37) node_modules/egg-development/agent.js
+                               ▇ [0ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                               ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                               ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                               ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [239ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [228ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [268ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                            ▇ [16ms] - #51 Load "Symbol(model)" to Application
+                                             ▇▇▇▇ [68ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-05-30 09:48:29,128 INFO 27734 [egg:core] dump config after ready, 4ms
+2026-05-30 10:03:46,559 WARN 27734 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/extend/context.js change
+2026-05-30 10:03:46,356 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/extend/context.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7369871,"size":0,"blocks":0,"atimeMs":1780105217861.8252,"mtimeMs":1780106626355.1135,"ctimeMs":1780106626355.1135,"birthtimeMs":1779800674655.788},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:03:46,358 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/extend/context.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7369871,"size":714,"blocks":8,"atimeMs":1780105217861.8252,"mtimeMs":1780106626356.1135,"ctimeMs":1780106626356.1135,"birthtimeMs":1779800674655.788},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:04:04,306 WARN 27734 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/user.js change
+2026-05-30 10:04:04,104 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7369879,"size":3376,"blocks":8,"atimeMs":1780105219079.8103,"mtimeMs":1780106644102.9146,"ctimeMs":1780106644102.9146,"birthtimeMs":1779800689652.5454},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:04:04,104 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7369879,"size":3376,"blocks":8,"atimeMs":1780105219079.8103,"mtimeMs":1780106644102.9146,"ctimeMs":1780106644102.9146,"birthtimeMs":1779800689652.5454},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:04:13,549 WARN 27734 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/resource.js change
+2026-05-30 10:04:13,347 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/resource.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7382116,"size":0,"blocks":0,"atimeMs":1780105219078.8103,"mtimeMs":1780106653345.8113,"ctimeMs":1780106653345.8113,"birthtimeMs":1779869627257.9329},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:04:13,348 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/resource.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7382116,"size":3514,"blocks":8,"atimeMs":1780105219078.8103,"mtimeMs":1780106653346.8113,"ctimeMs":1780106653346.8113,"birthtimeMs":1779869627257.9329},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:04:17,199 WARN 27734 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/notice.js change
+2026-05-30 10:04:16,996 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7369918,"size":1142,"blocks":8,"atimeMs":1780105219078.8103,"mtimeMs":1780106656994.7708,"ctimeMs":1780106656994.7708,"birthtimeMs":1779869758384.2673},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:04:16,997 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7369918,"size":1142,"blocks":8,"atimeMs":1780105219078.8103,"mtimeMs":1780106656994.7708,"ctimeMs":1780106656994.7708,"birthtimeMs":1779869758384.2673},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:04:37,813 WARN 27734 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/controller/user.js change
+2026-05-30 10:04:37,610 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/user.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7369909,"size":1857,"blocks":8,"atimeMs":1780105219200.8088,"mtimeMs":1780106677608.542,"ctimeMs":1780106677608.542,"birthtimeMs":1779800740720.893},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:04:37,612 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/user.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7369909,"size":1857,"blocks":8,"atimeMs":1780105219200.8088,"mtimeMs":1780106677608.542,"ctimeMs":1780106677608.542,"birthtimeMs":1779800740720.893},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:04:49,427 WARN 27734 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/router.js change
+2026-05-30 10:04:49,223 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/router.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7369936,"size":0,"blocks":0,"atimeMs":1780105219201.8088,"mtimeMs":1780106689221.4138,"ctimeMs":1780106689221.4138,"birthtimeMs":1779800775644.243},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:04:49,225 INFO 27734 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/router.js","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7369936,"size":2033,"blocks":8,"atimeMs":1780105219201.8088,"mtimeMs":1780106689223.4138,"ctimeMs":1780106689223.4138,"birthtimeMs":1779800775644.243},"remove":false,"isDirectory":false,"isFile":true}
+2026-05-30 10:08:59,037 INFO 30481 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-05-30 10:08:58,757 INFO 30481 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-05-30 10:08:58,976 INFO 30481 [egg:core] dump config after load, 5ms
+2026-05-30 10:08:59,010 INFO 30481 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-05-30 10:08:59,010 INFO 30481 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-05-30 10:08:59,010 INFO 30481 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-05-30 10:08:59,010 INFO 30481 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-05-30 10:08:59,010 INFO 30481 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-05-30 10:08:59,010 INFO 30481 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-05-30 10:08:59,011 INFO 30481 [egg-watcher:agent] watcher start success
+2026-05-30 10:08:59,044 INFO 30481 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [397ms] - #0 Process Start
+                         ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [392ms] - #1 Application Start
+                         ▇ [6ms] - #2 Load Plugin
+                         ▇ [11ms] - #3 Load Config
+                         ▇ [0ms] - #4 Require(0) config/config.default.js
+                         ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                         ▇ [1ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                          ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                          ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                          ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                          ▇ [1ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                          ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                          ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                          ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                          ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                          ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                          ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                          ▇ [0ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                          ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                          ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                          ▇ [0ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                          ▇ [0ms] - #21 Require(17) config/config.default.js
+                          ▇ [0ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                          ▇ [0ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                          ▇ [0ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                          ▇ [0ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                          ▇▇▇ [57ms] - #26 Load extend/agent.js
+                          ▇ [0ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                          ▇▇▇ [52ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                             ▇ [3ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                              ▇ [16ms] - #30 Load extend/context.js
+                              ▇ [4ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                              ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                              ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                              ▇ [7ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                               ▇ [1ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                               ▇ [0ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                               ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                               ▇ [0ms] - #38 Require(32) app/extend/context.js
+                               ▇ [9ms] - #39 Load agent.js
+                               ▇ [1ms] - #40 Require(33) node_modules/egg-security/agent.js
+                               ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                               ▇ [3ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                               ▇ [0ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                               ▇ [3ms] - #44 Require(37) node_modules/egg-development/agent.js
+                               ▇ [0ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                               ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                               ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                                ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [251ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                ▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [234ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [278ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                            ▇ [16ms] - #51 Load "Symbol(model)" to Application
+                                             ▇▇▇▇ [67ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-05-30 10:08:59,044 INFO 30481 [egg:core] dump config after ready, 4ms

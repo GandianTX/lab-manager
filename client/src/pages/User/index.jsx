@@ -14,6 +14,9 @@ export default function UserManage() {
   const [searchKeyword, setSearchKeyword] = useState('');
   const [form] = Form.useForm();
 
+  const userInfo = JSON.parse(localStorage.getItem('user') || '{}');
+  const isAdmin = userInfo.role === 'admin';
+
   const fetchData = async (page = 1, size = 10, keyword = '') => {
     setLoading(true);
     try {
@@ -25,24 +28,12 @@ export default function UserManage() {
 
   useEffect(() => { fetchData(); }, []);
 
-  const handleAdd = () => {
-    setEditingRecord(null);
-    form.resetFields();
-    setModalOpen(true);
-  };
-
-  const handleEdit = (record) => {
-    setEditingRecord(record);
-    form.setFieldsValue(record);
-    setModalOpen(true);
-  };
+  const handleAdd = () => { setEditingRecord(null); form.resetFields(); setModalOpen(true); };
+  const handleEdit = (r) => { setEditingRecord(r); form.setFieldsValue(r); setModalOpen(true); };
 
   const handleDelete = async (id) => {
-    try {
-      await deleteUser(id);
-      message.success('删除成功');
-      fetchData(pagination.current, pagination.pageSize, searchKeyword);
-    } catch { /* handled */ }
+    try { await deleteUser(id); message.success('删除成功'); fetchData(pagination.current, pagination.pageSize, searchKeyword); }
+    catch { /* handled */ }
   };
 
   const handleSubmit = async () => {
@@ -65,19 +56,19 @@ export default function UserManage() {
     { title: 'ID', dataIndex: 'id', width: 60 },
     { title: '用户名', dataIndex: 'username', width: 150 },
     { title: '角色', dataIndex: 'role', width: 100,
-      render: (r) => <Tag color={roleColors[r]}>{r === 'admin' ? '管理员' : '普通用户'}</Tag> },
+      render: r => <Tag color={roleColors[r]}>{r === 'admin' ? '管理员' : '普通用户'}</Tag> },
     { title: '创建时间', dataIndex: 'create_time', width: 180 },
-    {
+    ...(isAdmin ? [{
       title: '操作', width: 150, fixed: 'right',
-      render: (_, record) => (
+      render: (_, r) => (
         <Space>
-          <Button type="link" icon={<EditOutlined />} onClick={() => handleEdit(record)}>编辑</Button>
-          <Popconfirm title="确认删除？" onConfirm={() => handleDelete(record.id)}>
+          <Button type="link" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>
+          <Popconfirm title="确认删除？" onConfirm={() => handleDelete(r.id)}>
             <Button type="link" danger icon={<DeleteOutlined />}>删除</Button>
           </Popconfirm>
         </Space>
       ),
-    },
+    }] : []),
   ];
 
   return (
@@ -88,27 +79,29 @@ export default function UserManage() {
           onChange={e => setSearchKeyword(e.target.value)}
           onSearch={() => fetchData(1, pagination.pageSize, searchKeyword)}
           style={{ width: 240 }} enterButton={<SearchOutlined />} />
-        <Button type="primary" icon={<PlusOutlined />} onClick={handleAdd}>新增用户</Button>
+        {isAdmin && <Button type="primary" icon={<PlusOutlined />} onClick={handleAdd}>新增用户</Button>}
       </Space>
       <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
         pagination={pagination} onChange={p => fetchData(p.current, p.pageSize, searchKeyword)}
         scroll={{ x: 700 }} />
 
-      <Modal title={editingRecord ? '编辑用户' : '新增用户'} open={modalOpen}
-        onOk={handleSubmit} onCancel={() => setModalOpen(false)} destroyOnClose>
-        <Form form={form} layout="vertical">
-          <Form.Item name="username" label="用户名" rules={[{ required: true, min: 3 }]}>
-            <Input disabled={!!editingRecord} />
-          </Form.Item>
-          <Form.Item name="password" label="密码"
-            rules={editingRecord ? [] : [{ required: true, min: 6 }]}>
-            <Input.Password placeholder={editingRecord ? '不修改请留空' : '请输入密码'} />
-          </Form.Item>
-          <Form.Item name="role" label="角色" rules={[{ required: true }]}>
-            <Select options={[{ value: 'admin', label: '管理员' }, { value: 'user', label: '普通用户' }]} />
-          </Form.Item>
-        </Form>
-      </Modal>
+      {isAdmin && (
+        <Modal title={editingRecord ? '编辑用户' : '新增用户'} open={modalOpen}
+          onOk={handleSubmit} onCancel={() => setModalOpen(false)} destroyOnClose>
+          <Form form={form} layout="vertical">
+            <Form.Item name="username" label="用户名" rules={[{ required: true, min: 3 }]}>
+              <Input disabled={!!editingRecord} />
+            </Form.Item>
+            <Form.Item name="password" label="密码"
+              rules={editingRecord ? [] : [{ required: true, min: 6 }]}>
+              <Input.Password placeholder={editingRecord ? '不修改请留空' : '请输入密码'} />
+            </Form.Item>
+            <Form.Item name="role" label="角色" rules={[{ required: true }]}>
+              <Select options={[{ value: 'admin', label: '管理员' }, { value: 'user', label: '普通用户' }]} />
+            </Form.Item>
+          </Form>
+        </Modal>
+      )}
     </div>
   );
 }

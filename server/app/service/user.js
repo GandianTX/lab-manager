@@ -7,27 +7,27 @@ const jwt = require('jsonwebtoken');
 const SECRET = 'lab_manager_jwt_2024';
 
 class UserService extends Service {
-  /** 用户登录 */
+  /** 用户登录（公开） */
   async login({ username, password }) {
     const { ctx } = this;
     const user = await ctx.model.User.findOne({ where: { username } });
     if (!user) ctx.throw(400, '用户名或密码错误');
-    const valid = bcrypt.compareSync(password, user.password);
-    if (!valid) ctx.throw(400, '用户名或密码错误');
+    if (!bcrypt.compareSync(password, user.password)) ctx.throw(400, '用户名或密码错误');
 
     const token = jwt.sign(
       { id: user.id, username: user.username, role: user.role },
-      SECRET,
-      { expiresIn: '24h' }
+      SECRET, { expiresIn: '24h' }
     );
     return { token, user: { id: user.id, username: user.username, role: user.role } };
   }
 
-  /** 用户列表（分页 + 搜索） */
+  /** 用户列表（admin only） */
   async list({ pageNum = 1, pageSize = 10, keyword = '', role = '' }) {
+    const { ctx } = this;
+    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
     pageNum = parseInt(pageNum) || 1;
     pageSize = parseInt(pageSize) || 10;
-    const { ctx } = this;
+
     const where = {};
     if (keyword) {
       where[ctx.app.Sequelize.Op.or] = [
@@ -46,9 +46,10 @@ class UserService extends Service {
     return { list: rows, total: count, pageNum, pageSize };
   }
 
-  /** 创建用户 */
+  /** 创建用户（admin only） */
   async create({ username, password, role }) {
     const { ctx } = this;
+    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
     const exist = await ctx.model.User.findOne({ where: { username } });
     if (exist) ctx.throw(400, '用户名已存在');
     const hashed = bcrypt.hashSync(password, 10);
@@ -56,12 +57,23 @@ class UserService extends Service {
     return { id: user.id, username: user.username, role: user.role };
   }
 
-  /** 更新用户 */
+  /** 更新用户（admin 可改任意用户，user 只能改自己） */
   async update(id, params) {
     const { ctx } = this;
     const user = await ctx.model.User.findByPk(id);
     if (!user) ctx.throw(404, '用户不存在');
+
+    // 权限检查
+    if (ctx.state.user.role !== 'admin' && ctx.state.user.id !== id) {
+      ctx.throw(403, '无权限');
+    }
+
+    // 普通用户不能改角色
+    if (ctx.state.user.role !== 'admin' && params.role) {
+      delete params.role;
+    }
     if (params.password) params.password = bcrypt.hashSync(params.password, 10);
+
     await user.update(params);
     return { id: user.id, username: user.username, role: user.role };
   }
@@ -74,9 +86,10 @@ class UserService extends Service {
     return user;
   }
 
-  /** 删除用户 */
+  /** 删除用户（admin only） */
   async delete(id) {
     const { ctx } = this;
+    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
     const user = await ctx.model.User.findByPk(id);
     if (!user) ctx.throw(404, '用户不存在');
     await user.destroy();
