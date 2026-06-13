@@ -2,8 +2,6 @@ import { Service } from 'egg';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 
-const SECRET = 'lab_manager_jwt_2024';
-
 export default class UserService extends Service {
   /** 用户登录（公开） */
   async login({ username, password }: { username: string; password: string }) {
@@ -14,7 +12,7 @@ export default class UserService extends Service {
 
     const token = jwt.sign(
       { id: user.id, username: user.username, role: user.role },
-      SECRET, { expiresIn: '24h' },
+      ctx.app.config.jwtSecret, { expiresIn: '24h' },
     );
     return { token, user: { id: user.id, username: user.username, role: user.role } };
   }
@@ -24,9 +22,8 @@ export default class UserService extends Service {
     pageNum?: number | string; pageSize?: number | string; keyword?: string; role?: string;
   }) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
-    const pNum = parseInt(String(pageNum)) || 1;
-    const pSize = parseInt(String(pageSize)) || 10;
+    if (!ctx.mustAdmin()) return;
+    const { pageNum: pNum, pageSize: pSize, offset } = ctx.helper.parsePage(pageNum, pageSize);
 
     const where: any = {};
     if (keyword) {
@@ -39,7 +36,7 @@ export default class UserService extends Service {
     const { count, rows } = await ctx.model.User.findAndCountAll({
       where,
       attributes: { exclude: ['password'] },
-      offset: (pNum - 1) * pSize,
+      offset,
       limit: pSize,
       order: [['create_time', 'DESC']],
     });
@@ -49,7 +46,7 @@ export default class UserService extends Service {
   /** 创建用户（admin only） */
   async create({ username, password, role }: { username: string; password: string; role?: string }) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
     const exist = await ctx.model.User.findOne({ where: { username } });
     if (exist) ctx.throw(400, '用户名已存在');
     const hashed = bcrypt.hashSync(password, 10);
@@ -87,7 +84,7 @@ export default class UserService extends Service {
   /** 删除用户（admin only） */
   async delete(id: number) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
     const user = await ctx.model.User.findByPk(id);
     if (!user) ctx.throw(404, '用户不存在');
     await user.destroy();

@@ -3,9 +3,8 @@ import { Table, Button, Space, Modal, Form, Input, Select, Popconfirm, message, 
 import { PlusOutlined, EditOutlined, DeleteOutlined, SearchOutlined } from '@ant-design/icons';
 import { getDeviceList, createDevice, updateDevice, deleteDevice } from '../../services/device';
 import { getLabList } from '../../services/lab';
-
-const statusMap: Record<string, string> = { NORMAL: '正常', BROKEN: '故障', MAINTAINING: '维护中', DISABLED: '停用' };
-const statusColors: Record<string, string> = { NORMAL: 'green', BROKEN: 'red', MAINTAINING: 'orange', DISABLED: 'default' };
+import { deviceStatusMap, deviceStatusColors } from '../../utils/constants';
+import { useAuth } from '../../utils/useAuth';
 
 const DevicePage: React.FC = () => {
   const [data, setData] = useState<any[]>([]);
@@ -14,18 +13,18 @@ const DevicePage: React.FC = () => {
   const [editingRecord, setEditingRecord] = useState<any>(null);
   const [pagination, setPagination] = useState({ current: 1, pageSize: 10, total: 0 });
   const [searchKeyword, setSearchKeyword] = useState('');
+  const [labFilter, setLabFilter] = useState<number | undefined>(undefined);
   const [labs, setLabs] = useState<any[]>([]);
   const [form] = Form.useForm();
 
-  const userInfo = JSON.parse(localStorage.getItem('user') || '{}');
-  const isAdmin = userInfo.role === 'admin';
+  const { isAdmin } = useAuth();
 
   useEffect(() => { fetchData(); fetchLabs(); }, []);
 
-  const fetchData = async (page = 1, size = 10, keyword = '') => {
+  const fetchData = async (page = 1, size = 10, keyword = '', lab_id?: number) => {
     setLoading(true);
     try {
-      const res = await getDeviceList({ pageNum: page, pageSize: size, keyword });
+      const res = await getDeviceList({ pageNum: page, pageSize: size, keyword, lab_id });
       setData(res.data.list);
       setPagination({ current: page, pageSize: size, total: res.data.total });
     } catch { /* handled */ } finally { setLoading(false); }
@@ -52,24 +51,23 @@ const DevicePage: React.FC = () => {
       if (editingRecord) { await updateDevice(editingRecord.id, values); message.success('更新成功'); }
       else { await createDevice(values); message.success('创建成功'); }
       setModalOpen(false);
-      fetchData(pagination.current, pagination.pageSize, searchKeyword);
+      fetchData(pagination.current, pagination.pageSize, searchKeyword, labFilter);
     } catch { /* handled */ }
   };
 
   const columns = [
-    { title: '设备名称', dataIndex: 'name', width: 160 },
-    { title: '型号', dataIndex: 'model', width: 140 },
-    { title: '所属实验室', dataIndex: ['lab', 'name'], width: 150, render: (t: string, r: any) => r.lab?.name || '-' },
-    { title: '状态', dataIndex: 'status', width: 100, render: (s: string) => <Tag color={statusColors[s]}>{statusMap[s]}</Tag> },
+    { title: '设备名称', dataIndex: 'name', ellipsis: true },
+    { title: '型号', dataIndex: 'model', ellipsis: true },
+    { title: '所属实验室', dataIndex: ['lab', 'name'], ellipsis: true, render: (t: string, r: any) => r.lab?.name || '-' },
+    { title: '状态', dataIndex: 'status', width: 80, render: (s: string) => <Tag color={deviceStatusColors[s]}>{deviceStatusMap[s]}</Tag> },
     { title: '描述', dataIndex: 'description', ellipsis: true },
-    { title: '创建时间', dataIndex: 'create_time', width: 170 },
     ...(isAdmin ? [{
-      title: '操作', width: 150, fixed: 'right' as const,
+      title: '操作', width: 120,
       render: (_: any, r: any) => (
-        <Space>
-          <Button type="link" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>
+        <Space size={0}>
+          <Button type="link" size="small" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>
           <Popconfirm title="确认删除？" onConfirm={() => handleDelete(r.id)}>
-            <Button type="link" danger icon={<DeleteOutlined />}>删除</Button>
+            <Button type="link" size="small" danger icon={<DeleteOutlined />}>删除</Button>
           </Popconfirm>
         </Space>
       ),
@@ -85,12 +83,11 @@ const DevicePage: React.FC = () => {
           onSearch={() => fetchData(1, pagination.pageSize, searchKeyword)}
           style={{ width: 240 }} enterButton={<SearchOutlined />} />
         <Select placeholder="按实验室筛选" allowClear style={{ width: 180 }}
-          options={labs} onChange={() => fetchData(1, pagination.pageSize, searchKeyword)} />
+          options={labs} onChange={v => { setLabFilter(v); fetchData(1, pagination.pageSize, searchKeyword, v); }} />
         {isAdmin && <Button type="primary" icon={<PlusOutlined />} onClick={handleAdd}>新增设备</Button>}
       </Space>
       <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
-        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize, searchKeyword)}
-        scroll={{ x: 1000 }} />
+        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize, searchKeyword, labFilter)} />
 
       {isAdmin && (
         <Modal title={editingRecord ? '编辑设备' : '新增设备'} open={modalOpen}

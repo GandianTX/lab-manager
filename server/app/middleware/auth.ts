@@ -1,8 +1,6 @@
 import { Context } from 'egg';
 import jwt from 'jsonwebtoken';
 
-const SECRET = 'lab_manager_jwt_2024';
-
 export default () => {
   return async function auth(ctx: Context, next: () => Promise<any>) {
     const token = ctx.get('Authorization');
@@ -13,7 +11,7 @@ export default () => {
     }
     try {
       const tokenValue = token.replace('Bearer ', '');
-      const decoded = jwt.verify(tokenValue, SECRET);
+      const decoded = jwt.verify(tokenValue, ctx.app.config.jwtSecret);
       ctx.state.user = decoded as any;
     } catch (err) {
       ctx.status = 401;

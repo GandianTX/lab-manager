@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState } from 'react';
 import { Outlet, useNavigate, useLocation } from 'react-router-dom';
 import { Layout, Menu, Button, Dropdown, theme } from 'antd';
 import {
@@ -14,6 +14,7 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
 } from '@ant-design/icons';
+import { useAuth } from '../utils/useAuth';
 
 const { Header, Sider, Content } = Layout;
 
@@ -45,12 +46,7 @@ const BasicLayout: React.FC = () => {
   const location = useLocation();
   const { token: themeToken } = theme.useToken();
 
-  const user = useMemo(() => {
-    try { return JSON.parse(localStorage.getItem('user') || '{}'); }
-    catch { return {}; }
-  }, []);
-
-  const isAdmin = user.role === 'admin';
+  const { user, isAdmin } = useAuth();
   const menuItems = isAdmin ? adminMenuItems : studentMenuItems;
 
   const handleLogout = () => {

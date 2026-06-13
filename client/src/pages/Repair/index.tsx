@@ -4,9 +4,8 @@ import { PlusOutlined } from '@ant-design/icons';
 import { getRepairList, createRepair, confirmRepair, rejectRepair, resolveRepair } from '../../services/repair';
 import { getDeviceList } from '../../services/device';
 import { getLabList } from '../../services/lab';
-
-const statusMap: Record<string, string> = { PENDING: '待处理', CONFIRMED: '已确认', REJECTED: '已驳回', RESOLVED: '已处理' };
-const statusColors: Record<string, string> = { PENDING: 'gold', CONFIRMED: 'blue', REJECTED: 'red', RESOLVED: 'green' };
+import { repairStatusMap, repairStatusColors } from '../../utils/constants';
+import { useAuth } from '../../utils/useAuth';
 
 const RepairPage: React.FC = () => {
   const [data, setData] = useState<any[]>([]);
@@ -17,8 +16,7 @@ const RepairPage: React.FC = () => {
   const [labs, setLabs] = useState<any[]>([]);
   const [form] = Form.useForm();
 
-  const user = JSON.parse(localStorage.getItem('user') || '{}');
-  const isAdmin = user.role === 'admin';
+  const { isAdmin } = useAuth();
 
   useEffect(() => { fetchData(); fetchDevices(); fetchLabs(); }, []);
 
@@ -70,25 +68,24 @@ const RepairPage: React.FC = () => {
   };
 
   const columns = [
-    { title: '报修人', dataIndex: ['user', 'username'], width: 100, render: (t: string, r: any) => r.user?.username || '-' },
-    { title: '设备', dataIndex: ['device', 'name'], width: 140, render: (t: string, r: any) => r.device?.name || '-' },
-    { title: '所属实验室', dataIndex: ['lab', 'name'], width: 140, render: (t: string, r: any) => r.lab?.name || '-' },
+    { title: '报修人', dataIndex: ['user', 'username'], width: 80, render: (t: string, r: any) => r.user?.username || '-' },
+    { title: '设备', dataIndex: ['device', 'name'], ellipsis: true, render: (t: string, r: any) => r.device?.name || '-' },
+    { title: '所属实验室', dataIndex: ['lab', 'name'], ellipsis: true, render: (t: string, r: any) => r.lab?.name || '-' },
     { title: '故障描述', dataIndex: 'fault_description', ellipsis: true },
-    { title: '状态', dataIndex: 'status', width: 100, render: (s: string) => <Tag color={statusColors[s]}>{statusMap[s]}</Tag> },
-    { title: '创建时间', dataIndex: 'create_time', width: 170 },
+    { title: '状态', dataIndex: 'status', width: 80, render: (s: string) => <Tag color={repairStatusColors[s]}>{repairStatusMap[s]}</Tag> },
     {
-      title: '操作', width: 180, fixed: 'right' as const,
+      title: '操作', width: 140,
       render: (_: any, r: any) => (
-        <Space>
+        <Space size={0}>
           {isAdmin && r.status === 'PENDING' && (
             <>
-              <Button type="link" onClick={() => handleConfirm(r.id)}>确认</Button>
-              <Button type="link" danger onClick={() => handleReject(r.id)}>驳回</Button>
+              <Button type="link" size="small" onClick={() => handleConfirm(r.id)}>确认</Button>
+              <Button type="link" size="small" danger onClick={() => handleReject(r.id)}>驳回</Button>
             </>
           )}
           {isAdmin && r.status === 'CONFIRMED' && (
             <Popconfirm title="确认已处理？" onConfirm={() => handleResolve(r.id)}>
-              <Button type="link">已处理</Button>
+              <Button type="link" size="small">已处理</Button>
             </Popconfirm>
           )}
         </Space>
@@ -103,8 +100,7 @@ const RepairPage: React.FC = () => {
         <Button type="primary" icon={<PlusOutlined />} onClick={handleApply}>提交报修</Button>
       </Space>
       <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
-        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize)}
-        scroll={{ x: 1000 }} />
+        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize)} />
 
       <Modal title="提交报修" open={modalOpen} onOk={handleSubmit} onCancel={() => setModalOpen(false)} destroyOnClose>
         <Form form={form} layout="vertical">

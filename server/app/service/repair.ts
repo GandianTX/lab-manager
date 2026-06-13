@@ -5,9 +5,8 @@ export default class RepairService extends Service {
   async list({ pageNum = 1, pageSize = 10, status }: {
     pageNum?: number | string; pageSize?: number | string; status?: string;
   }) {
-    const pNum = parseInt(String(pageNum)) || 1;
-    const pSize = parseInt(String(pageSize)) || 10;
     const { ctx } = this;
+    const { pageNum: pNum, pageSize: pSize, offset } = ctx.helper.parsePage(pageNum, pageSize);
     const where: any = {};
 
     // 普通用户只能看自己的
@@ -23,7 +22,7 @@ export default class RepairService extends Service {
         { model: ctx.model.Device, as: 'device', attributes: ['id', 'name', 'model'] },
         { model: ctx.model.Lab, as: 'lab', attributes: ['id', 'name', 'location'] },
       ],
-      offset: (pNum - 1) * pSize,
+      offset,
       limit: pSize,
       order: [['create_time', 'DESC']],
     });
@@ -52,7 +51,7 @@ export default class RepairService extends Service {
   /** 确认故障（admin only）→ 设备状态自动改为 BROKEN */
   async confirm(id: number) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
 
     const record = await ctx.model.Repair.findByPk(id);
     if (!record) ctx.throw(404, '报修记录不存在');
@@ -81,15 +80,23 @@ export default class RepairService extends Service {
   /** 标记已处理（admin only）→ 设备状态自动恢复 NORMAL */
   async resolve(id: number) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
 
     const record = await ctx.model.Repair.findByPk(id);
     if (!record) ctx.throw(404, '报修记录不存在');
     if (record.status !== 'CONFIRMED') ctx.throw(400, '当前状态不可标记已处理');
 
     await record.update({ status: 'RESOLVED' });
-    // 设备状态自动恢复 NORMAL
-    await ctx.model.Device.update({ status: 'NORMAL' }, { where: { id: record.device_id } });
+    // 检查该设备是否还有其他未完成的报修记录，只有全部处理完才恢复 NORMAL
+    const pendingCount = await ctx.model.Repair.count({
+      where: {
+        device_id: record.device_id,
+        status: { [ctx.app.Sequelize.Op.in]: ['PENDING', 'CONFIRMED'] },
+      },
+    });
+    if (pendingCount === 0) {
+      await ctx.model.Device.update({ status: 'NORMAL' }, { where: { id: record.device_id } });
+    }
 
     return record;
   }

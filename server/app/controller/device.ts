@@ -5,6 +5,7 @@ export default class DeviceController extends Controller {
   async list() {
     const { ctx } = this;
     const result = await ctx.service.device.list(ctx.query);
+    if (!result) return ctx.success([]);
     ctx.page(result.list, result.total, result.pageNum, result.pageSize);
   }
 

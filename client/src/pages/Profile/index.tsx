@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Card, Form, Input, Button, message, Descriptions, Spin, Modal } from 'antd';
 import { EditOutlined, UserOutlined } from '@ant-design/icons';
 import { getCurrentUser, updateProfile } from '../../services/user';
+import { useAuth } from '../../utils/useAuth';
 
 const UserProfile: React.FC = () => {
   const [user, setUser] = useState<any>(null);
@@ -35,7 +36,7 @@ const UserProfile: React.FC = () => {
     } catch { /* handled */ }
   };
 
-  const userInfo = JSON.parse(localStorage.getItem('user') || '{}');
+  const { user: localUser } = useAuth();
 
   if (loading) return <div style={{ textAlign: 'center', padding: 60 }}><Spin size="large" /></div>;
 
@@ -48,7 +49,7 @@ const UserProfile: React.FC = () => {
             {user?.username || '-'}
           </Descriptions.Item>
           <Descriptions.Item label="角色">
-            {userInfo.role === 'admin' ? '管理员' : '学生'}
+            {localUser.role === 'admin' ? '管理员' : '学生'}
           </Descriptions.Item>
           <Descriptions.Item label="创建时间">
             {user?.create_time || '-'}

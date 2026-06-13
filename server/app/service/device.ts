@@ -5,9 +5,8 @@ export default class DeviceService extends Service {
   async list({ pageNum = 1, pageSize = 10, keyword = '', lab_id, status }: {
     pageNum?: number | string; pageSize?: number | string; keyword?: string; lab_id?: number | string; status?: string;
   }) {
-    const pNum = parseInt(String(pageNum)) || 1;
-    const pSize = parseInt(String(pageSize)) || 10;
     const { ctx } = this;
+    const { pageNum: pNum, pageSize: pSize, offset } = ctx.helper.parsePage(pageNum, pageSize);
     const where: any = {};
     if (keyword) where.name = { [ctx.app.Sequelize.Op.like]: `%${keyword}%` };
     if (lab_id) where.lab_id = lab_id;
@@ -16,7 +15,7 @@ export default class DeviceService extends Service {
     const { count, rows } = await ctx.model.Device.findAndCountAll({
       where,
       include: [{ model: ctx.model.Lab, as: 'lab', attributes: ['id', 'name', 'location'] }],
-      offset: (pNum - 1) * pSize,
+      offset,
       limit: pSize,
       order: [['create_time', 'DESC']],
     });
@@ -26,7 +25,7 @@ export default class DeviceService extends Service {
   /** 创建设备（admin only） */
   async create(params: any) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
     const lab = await ctx.model.Lab.findByPk(params.lab_id);
     if (!lab) ctx.throw(400, '所属实验室不存在');
     return await ctx.model.Device.create(params);
@@ -35,7 +34,7 @@ export default class DeviceService extends Service {
   /** 更新设备（admin only） */
   async update(id: number, params: any) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
     const device = await ctx.model.Device.findByPk(id);
     if (!device) ctx.throw(404, '设备不存在');
     if (params.lab_id) {
@@ -49,7 +48,7 @@ export default class DeviceService extends Service {
   /** 删除设备（admin only） */
   async delete(id: number) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
     const device = await ctx.model.Device.findByPk(id);
     if (!device) ctx.throw(404, '设备不存在');
     // 检查是否有未完成的报修

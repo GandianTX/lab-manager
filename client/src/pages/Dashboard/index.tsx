@@ -10,6 +10,8 @@ import { LineChart, PieChart, BarChart } from 'echarts/charts';
 import { GridComponent, TooltipComponent, LegendComponent, TitleComponent } from 'echarts/components';
 import { CanvasRenderer } from 'echarts/renderers';
 import { getDashboardStats } from '../../services/dashboard';
+import { deviceStatusMap as deviceStatusConstMap, repairStatusMap as repairStatusConstMap, reservationStatusMap as reservationStatusConstMap } from '../../utils/constants';
+import { useAuth } from '../../utils/useAuth';
 
 echarts.use([LineChart, PieChart, BarChart, GridComponent, TooltipComponent, LegendComponent, TitleComponent, CanvasRenderer]);
 
@@ -17,8 +19,7 @@ const Dashboard: React.FC = () => {
   const [stats, setStats] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
-  const userInfo = JSON.parse(localStorage.getItem('user') || '{}');
-  const isAdmin = userInfo.role === 'admin';
+  const { isAdmin } = useAuth();
 
   useEffect(() => { fetchStats(); }, []);
 
@@ -63,18 +64,16 @@ const AdminDashboard: React.FC<{ stats: any }> = ({ stats }) => {
     series: [{ name: '预约次数', type: 'bar', data: (stats?.labRank || []).map((l: any) => l.value), itemStyle: { color: '#722ed1' } }],
   };
 
-  const deviceStatusMap: Record<string, string> = { NORMAL: '正常', BROKEN: '故障', MAINTAINING: '维护中', DISABLED: '停用' };
   const devicePieOption = {
     tooltip: { trigger: 'item' },
     legend: { bottom: 0 },
-    series: [{ name: '设备状态', type: 'pie', radius: ['40%', '70%'], data: (stats?.deviceStatus || []).map((d: any) => ({ name: deviceStatusMap[d.name] || d.name, value: d.value })), label: { show: true, formatter: '{b}: {c}' } }],
+    series: [{ name: '设备状态', type: 'pie', radius: ['40%', '70%'], data: (stats?.deviceStatus || []).map((d: any) => ({ name: deviceStatusConstMap[d.name] || d.name, value: d.value })), label: { show: true, formatter: '{b}: {c}' } }],
   };
 
-  const repairStatusMap: Record<string, string> = { PENDING: '待处理', CONFIRMED: '已确认', REJECTED: '已驳回', RESOLVED: '已处理' };
   const repairPieOption = {
     tooltip: { trigger: 'item' },
     legend: { bottom: 0 },
-    series: [{ name: '报修统计', type: 'pie', radius: ['40%', '70%'], data: (stats?.repairStatus || []).map((r: any) => ({ name: repairStatusMap[r.name] || r.name, value: r.value })), label: { show: true, formatter: '{b}: {c}' } }],
+    series: [{ name: '报修统计', type: 'pie', radius: ['40%', '70%'], data: (stats?.repairStatus || []).map((r: any) => ({ name: repairStatusConstMap[r.name] || r.name, value: r.value })), label: { show: true, formatter: '{b}: {c}' } }],
   };
 
   return (
@@ -137,11 +136,10 @@ const StudentDashboard: React.FC<{ stats: any }> = ({ stats }) => {
     { title: '已通过', value: stats?.approvedCount, icon: <CheckCircleOutlined />, color: '#52c41a' },
   ];
 
-  const statusMap: Record<string, string> = { PENDING: '待审批', APPROVED: '已通过', REJECTED: '已驳回', FINISHED: '已完成', CANCELLED: '已取消' };
   const statusPieOption = {
     tooltip: { trigger: 'item' },
     legend: { bottom: 0 },
-    series: [{ name: '预约状态', type: 'pie', radius: ['40%', '70%'], data: (stats?.statusPie || []).map((s: any) => ({ name: statusMap[s.name] || s.name, value: s.value })), label: { show: true, formatter: '{b}: {c}' } }],
+    series: [{ name: '预约状态', type: 'pie', radius: ['40%', '70%'], data: (stats?.statusPie || []).map((s: any) => ({ name: reservationStatusConstMap[s.name] || s.name, value: s.value })), label: { show: true, formatter: '{b}: {c}' } }],
   };
 
   const trendOption = {

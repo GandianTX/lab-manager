@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Table, Button, Space, Modal, Form, Input, Select, Popconfirm, message, Tag } from 'antd';
 import { PlusOutlined, DeleteOutlined, EditOutlined } from '@ant-design/icons';
 import { getNoticeList, createNotice, updateNotice, deleteNotice } from '../../services/notice';
-
-const typeMap: Record<string, string> = { SYSTEM: '系统公告', EXPERIMENT: '实验通知', MAINTAIN: '维护通知', SUSPENSION: '停课通知' };
-const typeColors: Record<string, string> = { SYSTEM: 'blue', EXPERIMENT: 'green', MAINTAIN: 'orange', SUSPENSION: 'red' };
+import { noticeTypeMap, noticeTypeColors } from '../../utils/constants';
+import { useAuth } from '../../utils/useAuth';
 
 const NoticeManage: React.FC = () => {
   const [data, setData] = useState<any[]>([]);
@@ -14,8 +13,7 @@ const NoticeManage: React.FC = () => {
   const [pagination, setPagination] = useState({ current: 1, pageSize: 10, total: 0 });
   const [form] = Form.useForm();
 
-  const user = JSON.parse(localStorage.getItem('user') || '{}');
-  const isAdmin = user.role === 'admin';
+  const { isAdmin } = useAuth();
 
   const fetchData = async (page = 1, size = 10) => {
     setLoading(true);
@@ -51,17 +49,16 @@ const NoticeManage: React.FC = () => {
   };
 
   const columns = [
-    { title: '标题', dataIndex: 'title', width: 220 },
-    { title: '类型', dataIndex: 'type', width: 110, render: (t: string) => <Tag color={typeColors[t]}>{typeMap[t] || t}</Tag> },
+    { title: '标题', dataIndex: 'title', ellipsis: true },
+    { title: '类型', dataIndex: 'type', width: 90, render: (t: string) => <Tag color={noticeTypeColors[t]}>{noticeTypeMap[t] || t}</Tag> },
     { title: '内容', dataIndex: 'content', ellipsis: true },
-    { title: '发布时间', dataIndex: 'create_time', width: 180 },
     ...(isAdmin ? [{
-      title: '操作', width: 150,
+      title: '操作', width: 120,
       render: (_: any, r: any) => (
-        <Space>
-          <Button type="link" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>
+        <Space size={0}>
+          <Button type="link" size="small" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>
           <Popconfirm title="确认删除？" onConfirm={() => handleDelete(r.id)}>
-            <Button type="link" danger icon={<DeleteOutlined />}>删除</Button>
+            <Button type="link" size="small" danger icon={<DeleteOutlined />}>删除</Button>
           </Popconfirm>
         </Space>
       ),
@@ -75,8 +72,7 @@ const NoticeManage: React.FC = () => {
         {isAdmin && <Button type="primary" icon={<PlusOutlined />} onClick={handleAdd}>发布公告</Button>}
       </Space>
       <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
-        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize)}
-        scroll={{ x: 800 }} />
+        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize)} />
 
       <Modal title={editingRecord ? '编辑公告' : '发布公告'} open={modalOpen}
         onOk={handleSubmit} onCancel={() => setModalOpen(false)} destroyOnClose>

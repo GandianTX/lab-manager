@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "dotenv": "^17.4.2",
     "egg": "^3.17.4",
     "egg-cors": "^2.2.3",
     "egg-jwt": "^2.0.0",

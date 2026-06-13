@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Table, Button, Space, Modal, Form, Input, Select, Popconfirm, message, Tag } from 'antd';
 import { PlusOutlined, EditOutlined, DeleteOutlined, SearchOutlined } from '@ant-design/icons';
 import { getUserList, createUser, updateUser, deleteUser } from '../../services/user';
-
-const roleColors: Record<string, string> = { admin: 'red', student: 'blue' };
-const roleLabels: Record<string, string> = { admin: '管理员', student: '学生' };
+import { roleLabels, roleColors } from '../../utils/constants';
+import { useAuth } from '../../utils/useAuth';
 
 const UserManage: React.FC = () => {
   const [data, setData] = useState<any[]>([]);
@@ -15,8 +14,7 @@ const UserManage: React.FC = () => {
   const [searchKeyword, setSearchKeyword] = useState('');
   const [form] = Form.useForm();
 
-  const userInfo = JSON.parse(localStorage.getItem('user') || '{}');
-  const isAdmin = userInfo.role === 'admin';
+  const { isAdmin } = useAuth();
 
   const fetchData = async (page = 1, size = 10, keyword = '') => {
     setLoading(true);
@@ -54,18 +52,17 @@ const UserManage: React.FC = () => {
   };
 
   const columns = [
-    { title: 'ID', dataIndex: 'id', width: 60 },
-    { title: '用户名', dataIndex: 'username', width: 150 },
-    { title: '角色', dataIndex: 'role', width: 100,
+    { title: 'ID', dataIndex: 'id', width: 50 },
+    { title: '用户名', dataIndex: 'username', ellipsis: true },
+    { title: '角色', dataIndex: 'role', width: 80,
       render: (r: string) => <Tag color={roleColors[r]}>{roleLabels[r] || r}</Tag> },
-    { title: '创建时间', dataIndex: 'create_time', width: 180 },
     ...(isAdmin ? [{
-      title: '操作', width: 150, fixed: 'right' as const,
+      title: '操作', width: 120,
       render: (_: any, r: any) => (
-        <Space>
-          <Button type="link" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>
+        <Space size={0}>
+          <Button type="link" size="small" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>
           <Popconfirm title="确认删除？" onConfirm={() => handleDelete(r.id)}>
-            <Button type="link" danger icon={<DeleteOutlined />}>删除</Button>
+            <Button type="link" size="small" danger icon={<DeleteOutlined />}>删除</Button>
           </Popconfirm>
         </Space>
       ),
@@ -83,8 +80,7 @@ const UserManage: React.FC = () => {
         {isAdmin && <Button type="primary" icon={<PlusOutlined />} onClick={handleAdd}>新增用户</Button>}
       </Space>
       <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
-        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize, searchKeyword)}
-        scroll={{ x: 700 }} />
+        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize, searchKeyword)} />
 
       {isAdmin && (
         <Modal title={editingRecord ? '编辑用户' : '新增用户'} open={modalOpen}

@@ -2,9 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Table, Button, Space, Modal, Form, Input, Select, Popconfirm, message, Tag, InputNumber } from 'antd';
 import { PlusOutlined, EditOutlined, DeleteOutlined, SearchOutlined, EyeOutlined } from '@ant-design/icons';
 import { getLabList, createLab, updateLab, deleteLab, getLabDetail } from '../../services/lab';
-
-const statusMap: Record<string, string> = { OPEN: '开放中', MAINTAIN: '维护中', DISABLED: '停用' };
-const statusColors: Record<string, string> = { OPEN: 'green', MAINTAIN: 'orange', DISABLED: 'red' };
+import { labStatusMap, labStatusColors, deviceStatusMap as deviceStatusConstMap, deviceStatusColors as deviceStatusConstColors } from '../../utils/constants';
+import { useAuth } from '../../utils/useAuth';
 
 const LabPage: React.FC = () => {
   const [data, setData] = useState<any[]>([]);
@@ -15,15 +14,15 @@ const LabPage: React.FC = () => {
   const [editingRecord, setEditingRecord] = useState<any>(null);
   const [pagination, setPagination] = useState({ current: 1, pageSize: 10, total: 0 });
   const [searchKeyword, setSearchKeyword] = useState('');
+  const [statusFilter, setStatusFilter] = useState<string | undefined>(undefined);
   const [form] = Form.useForm();
 
-  const userInfo = JSON.parse(localStorage.getItem('user') || '{}');
-  const isAdmin = userInfo.role === 'admin';
+  const { isAdmin } = useAuth();
 
-  const fetchData = async (page = 1, size = 10, keyword = '') => {
+  const fetchData = async (page = 1, size = 10, keyword = '', status?: string) => {
     setLoading(true);
     try {
-      const res = await getLabList({ pageNum: page, pageSize: size, keyword });
+      const res = await getLabList({ pageNum: page, pageSize: size, keyword, status });
       setData(res.data.list);
       setPagination({ current: page, pageSize: size, total: res.data.total });
     } catch { /* handled */ } finally { setLoading(false); }
@@ -42,7 +41,7 @@ const LabPage: React.FC = () => {
   };
 
   const handleDelete = async (id: number) => {
-    try { await deleteLab(id); message.success('删除成功'); fetchData(pagination.current, pagination.pageSize, searchKeyword); }
+    try { await deleteLab(id); message.success('删除成功'); fetchData(pagination.current, pagination.pageSize, searchKeyword, statusFilter); }
     catch { /* handled */ }
   };
 
@@ -52,26 +51,25 @@ const LabPage: React.FC = () => {
       if (editingRecord) { await updateLab(editingRecord.id, values); message.success('更新成功'); }
       else { await createLab(values); message.success('创建成功'); }
       setModalOpen(false);
-      fetchData(pagination.current, pagination.pageSize, searchKeyword);
+      fetchData(pagination.current, pagination.pageSize, searchKeyword, statusFilter);
     } catch { /* handled */ }
   };
 
   const columns = [
-    { title: '实验室名称', dataIndex: 'name', width: 180 },
-    { title: '位置', dataIndex: 'location', width: 150 },
-    { title: '容纳人数', dataIndex: 'capacity', width: 100 },
-    { title: '状态', dataIndex: 'status', width: 100, render: (s: string) => <Tag color={statusColors[s]}>{statusMap[s]}</Tag> },
+    { title: '实验室名称', dataIndex: 'name', ellipsis: true },
+    { title: '位置', dataIndex: 'location', ellipsis: true },
+    { title: '容量', dataIndex: 'capacity', width: 70 },
+    { title: '状态', dataIndex: 'status', width: 80, render: (s: string) => <Tag color={labStatusColors[s]}>{labStatusMap[s]}</Tag> },
     { title: '描述', dataIndex: 'description', ellipsis: true },
-    { title: '创建时间', dataIndex: 'create_time', width: 170 },
     {
-      title: '操作', width: 200, fixed: 'right' as const,
+      title: '操作', width: 160,
       render: (_: any, r: any) => (
-        <Space>
-          <Button type="link" icon={<EyeOutlined />} onClick={() => handleDetail(r.id)}>详情</Button>
-          {isAdmin && <Button type="link" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>}
+        <Space size={0}>
+          <Button type="link" size="small" icon={<EyeOutlined />} onClick={() => handleDetail(r.id)}>详情</Button>
+          {isAdmin && <Button type="link" size="small" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>}
           {isAdmin && (
             <Popconfirm title="确认删除？" onConfirm={() => handleDelete(r.id)}>
-              <Button type="link" danger icon={<DeleteOutlined />}>删除</Button>
+              <Button type="link" size="small" danger icon={<DeleteOutlined />}>删除</Button>
             </Popconfirm>
           )}
         </Space>
@@ -89,12 +87,11 @@ const LabPage: React.FC = () => {
           style={{ width: 240 }} enterButton={<SearchOutlined />} />
         <Select placeholder="按状态筛选" allowClear style={{ width: 130 }}
           options={[{ value: 'OPEN', label: '开放中' }, { value: 'MAINTAIN', label: '维护中' }, { value: 'DISABLED', label: '停用' }]}
-          onChange={v => fetchData(1, pagination.pageSize, searchKeyword)} />
+          onChange={v => { setStatusFilter(v); fetchData(1, pagination.pageSize, searchKeyword, v); }} />
         {isAdmin && <Button type="primary" icon={<PlusOutlined />} onClick={handleAdd}>新增实验室</Button>}
       </Space>
       <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
-        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize, searchKeyword)}
-        scroll={{ x: 1000 }} />
+        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize, searchKeyword, statusFilter)} />
 
       {/* 新增/编辑弹窗 */}
       {isAdmin && (
@@ -127,7 +124,7 @@ const LabPage: React.FC = () => {
             <p><strong>名称：</strong>{detailData.name}</p>
             <p><strong>位置：</strong>{detailData.location}</p>
             <p><strong>容纳人数：</strong>{detailData.capacity}</p>
-            <p><strong>状态：</strong><Tag color={statusColors[detailData.status]}>{statusMap[detailData.status]}</Tag></p>
+            <p><strong>状态：</strong><Tag color={labStatusColors[detailData.status]}>{labStatusMap[detailData.status]}</Tag></p>
             <p><strong>简介：</strong>{detailData.description || '-'}</p>
             {detailData.devices && detailData.devices.length > 0 && (
               <>
@@ -137,7 +134,7 @@ const LabPage: React.FC = () => {
                   columns={[
                     { title: '设备名称', dataIndex: 'name' },
                     { title: '型号', dataIndex: 'model' },
-                    { title: '状态', dataIndex: 'status', render: (s: string) => <Tag color={s === 'NORMAL' ? 'green' : s === 'BROKEN' ? 'red' : 'orange'}>{s}</Tag> },
+                    { title: '状态', dataIndex: 'status', render: (s: string) => <Tag color={deviceStatusConstColors[s] || 'default'}>{deviceStatusConstMap[s] || s}</Tag> },
                   ]} />
               </>
             )}

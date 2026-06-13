@@ -5,16 +5,15 @@ export default class LabService extends Service {
   async list({ pageNum = 1, pageSize = 10, keyword = '', status }: {
     pageNum?: number | string; pageSize?: number | string; keyword?: string; status?: string;
   }) {
-    const pNum = parseInt(String(pageNum)) || 1;
-    const pSize = parseInt(String(pageSize)) || 10;
     const { ctx } = this;
+    const { pageNum: pNum, pageSize: pSize, offset } = ctx.helper.parsePage(pageNum, pageSize);
     const where: any = {};
     if (keyword) where.name = { [ctx.app.Sequelize.Op.like]: `%${keyword}%` };
     if (status) where.status = status;
 
     const { count, rows } = await ctx.model.Lab.findAndCountAll({
       where,
-      offset: (pNum - 1) * pSize,
+      offset,
       limit: pSize,
       order: [['create_time', 'DESC']],
     });
@@ -34,7 +33,7 @@ export default class LabService extends Service {
   /** 创建实验室（admin only） */
   async create(params: any) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
     return await ctx.model.Lab.create(params);
   }
 
@@ -51,7 +50,7 @@ export default class LabService extends Service {
   /** 删除实验室（admin only） */
   async delete(id: number) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
     const lab = await ctx.model.Lab.findByPk(id);
     if (!lab) ctx.throw(404, '实验室不存在');
     // 检查是否有关联设备

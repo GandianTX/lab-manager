@@ -3,10 +3,9 @@ import { Table, Button, Space, Modal, Form, Select, Input, DatePicker, TimePicke
 import { PlusOutlined } from '@ant-design/icons';
 import { getReservationList, createReservation, approveReservation, rejectReservation, finishReservation, cancelReservation } from '../../services/reservation';
 import { getLabList } from '../../services/lab';
+import { reservationStatusMap, reservationStatusColors } from '../../utils/constants';
+import { useAuth } from '../../utils/useAuth';
 import dayjs from 'dayjs';
-
-const statusMap: Record<string, string> = { PENDING: '待审批', APPROVED: '已通过', REJECTED: '已驳回', FINISHED: '已完成', CANCELLED: '已取消' };
-const statusColors: Record<string, string> = { PENDING: 'gold', APPROVED: 'green', REJECTED: 'red', FINISHED: 'blue', CANCELLED: 'default' };
 
 const ReservationPage: React.FC = () => {
   const [data, setData] = useState<any[]>([]);
@@ -16,8 +15,7 @@ const ReservationPage: React.FC = () => {
   const [labs, setLabs] = useState<any[]>([]);
   const [form] = Form.useForm();
 
-  const user = JSON.parse(localStorage.getItem('user') || '{}');
-  const isAdmin = user.role === 'admin';
+  const { isAdmin } = useAuth();
 
   useEffect(() => { fetchData(); fetchLabs(); }, []);
 
@@ -73,32 +71,30 @@ const ReservationPage: React.FC = () => {
   };
 
   const columns = [
-    { title: '预约人', dataIndex: ['user', 'username'], width: 100, render: (t: string, r: any) => r.user?.username || '-' },
-    { title: '实验室', dataIndex: ['lab', 'name'], width: 150, render: (t: string, r: any) => r.lab?.name || '-' },
-    { title: '预约日期', dataIndex: 'date', width: 120 },
-    { title: '开始时间', dataIndex: 'start_time', width: 100 },
-    { title: '结束时间', dataIndex: 'end_time', width: 100 },
+    { title: '预约人', dataIndex: ['user', 'username'], width: 80, render: (t: string, r: any) => r.user?.username || '-' },
+    { title: '实验室', dataIndex: ['lab', 'name'], ellipsis: true, render: (t: string, r: any) => r.lab?.name || '-' },
+    { title: '预约日期', dataIndex: 'date', width: 110 },
+    { title: '时间段', width: 140, render: (_: any, r: any) => `${r.start_time?.substring(0, 5)} ~ ${r.end_time?.substring(0, 5)}` },
     { title: '用途', dataIndex: 'purpose', ellipsis: true },
-    { title: '状态', dataIndex: 'status', width: 100, render: (s: string) => <Tag color={statusColors[s]}>{statusMap[s]}</Tag> },
-    { title: '创建时间', dataIndex: 'create_time', width: 170 },
+    { title: '状态', dataIndex: 'status', width: 80, render: (s: string) => <Tag color={reservationStatusColors[s]}>{reservationStatusMap[s]}</Tag> },
     {
-      title: '操作', width: 220, fixed: 'right' as const,
+      title: '操作', width: 160,
       render: (_: any, r: any) => (
-        <Space>
+        <Space size={0}>
           {isAdmin && r.status === 'PENDING' && (
             <>
-              <Button type="link" onClick={() => handleApprove(r.id)}>通过</Button>
-              <Button type="link" danger onClick={() => handleReject(r.id)}>驳回</Button>
+              <Button type="link" size="small" onClick={() => handleApprove(r.id)}>通过</Button>
+              <Button type="link" size="small" danger onClick={() => handleReject(r.id)}>驳回</Button>
             </>
           )}
           {isAdmin && r.status === 'APPROVED' && (
             <Popconfirm title="确认完成？" onConfirm={() => handleFinish(r.id)}>
-              <Button type="link">完成</Button>
+              <Button type="link" size="small">完成</Button>
             </Popconfirm>
           )}
           {(r.status === 'PENDING' || r.status === 'APPROVED') && (
             <Popconfirm title="确认取消？" onConfirm={() => handleCancel(r.id)}>
-              <Button type="link" danger>取消</Button>
+              <Button type="link" size="small" danger>取消</Button>
             </Popconfirm>
           )}
         </Space>
@@ -113,8 +109,7 @@ const ReservationPage: React.FC = () => {
         <Button type="primary" icon={<PlusOutlined />} onClick={handleApply}>提交预约申请</Button>
       </Space>
       <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
-        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize)}
-        scroll={{ x: 1200 }} />
+        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize)} />
 
       <Modal title="提交预约申请" open={modalOpen} onOk={handleSubmit} onCancel={() => setModalOpen(false)} destroyOnClose width={500}>
         <Form form={form} layout="vertical">

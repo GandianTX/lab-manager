@@ -13,6 +13,7 @@ export default class UserController extends Controller {
   async list() {
     const { ctx } = this;
     const result = await ctx.service.user.list(ctx.query);
+    if (!result) return ctx.success([]);
     ctx.page(result.list, result.total, result.pageNum, result.pageSize);
   }
 

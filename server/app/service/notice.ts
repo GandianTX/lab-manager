@@ -5,15 +5,14 @@ export default class NoticeService extends Service {
   async list({ pageNum = 1, pageSize = 10, type }: {
     pageNum?: number | string; pageSize?: number | string; type?: string;
   }) {
-    const pNum = parseInt(String(pageNum)) || 1;
-    const pSize = parseInt(String(pageSize)) || 10;
     const { ctx } = this;
+    const { pageNum: pNum, pageSize: pSize, offset } = ctx.helper.parsePage(pageNum, pageSize);
     const where: any = {};
     if (type) where.type = type;
 
     const { count, rows } = await ctx.model.Notice.findAndCountAll({
       where,
-      offset: (pNum - 1) * pSize,
+      offset,
       limit: pSize,
       order: [['create_time', 'DESC']],
     });
@@ -23,14 +22,14 @@ export default class NoticeService extends Service {
   /** 发布公告（admin only） */
   async create({ title, content, type }: { title: string; content?: string; type?: string }) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
     return await ctx.model.Notice.create({ title, content, type: type || 'SYSTEM' });
   }
 
   /** 修改公告（admin only） */
   async update(id: number, params: any) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
     const notice = await ctx.model.Notice.findByPk(id);
     if (!notice) ctx.throw(404, '公告不存在');
     await notice.update(params);
@@ -40,7 +39,7 @@ export default class NoticeService extends Service {
   /** 删除公告（admin only） */
   async delete(id: number) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
     const notice = await ctx.model.Notice.findByPk(id);
     if (!notice) ctx.throw(404, '公告不存在');
     await notice.destroy();

@@ -5,9 +5,8 @@ export default class ReservationService extends Service {
   async list({ pageNum = 1, pageSize = 10, status }: {
     pageNum?: number | string; pageSize?: number | string; status?: string;
   }) {
-    const pNum = parseInt(String(pageNum)) || 1;
-    const pSize = parseInt(String(pageSize)) || 10;
     const { ctx } = this;
+    const { pageNum: pNum, pageSize: pSize, offset } = ctx.helper.parsePage(pageNum, pageSize);
     const where: any = {};
 
     // 普通用户只能看自己的
@@ -22,7 +21,7 @@ export default class ReservationService extends Service {
         { model: ctx.model.User, as: 'user', attributes: ['id', 'username'] },
         { model: ctx.model.Lab, as: 'lab', attributes: ['id', 'name', 'location'] },
       ],
-      offset: (pNum - 1) * pSize,
+      offset,
       limit: pSize,
       order: [['create_time', 'DESC']],
     });
@@ -51,7 +50,7 @@ export default class ReservationService extends Service {
   /** 审批通过（admin only） */
   async approve(id: number) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
 
     const record = await ctx.model.Reservation.findByPk(id);
     if (!record) ctx.throw(404, '预约记录不存在');
@@ -84,7 +83,7 @@ export default class ReservationService extends Service {
   /** 完成（admin only） */
   async finish(id: number) {
     const { ctx } = this;
-    if (ctx.state.user.role !== 'admin') ctx.throw(403, '无权限');
+    if (!ctx.mustAdmin()) return;
 
     const record = await ctx.model.Reservation.findByPk(id);
     if (!record) ctx.throw(404, '预约记录不存在');
