@@ -258,6 +258,7 @@
       },
       "dependencies": {
         "bcryptjs": "^2.4.3",
+        "dotenv": "^17.4.2",
         "egg": "^3.17.4",
         "egg-cors": "^2.2.3",
         "egg-jwt": "^2.0.0",
@@ -392,6 +393,7 @@
       "responseTimeout": 60000
     },
     "onClientError": null,
+    "jwtSecret": "<String len: 20>",
     "middleware": [
       "auth"
     ],
@@ -614,6 +616,7 @@
       },
       "dependencies": {
         "bcryptjs": "^2.4.3",
+        "dotenv": "^17.4.2",
         "egg": "^3.17.4",
         "egg-cors": "^2.2.3",
         "egg-jwt": "^2.0.0",

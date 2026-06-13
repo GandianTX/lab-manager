@@ -2534,3 +2534,526 @@ hostname: ATRI
                                                 ▇ [65ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
 2026-06-13 18:00:17,246 INFO 748057 [egg:core] dump config after ready, 5ms
 2026-06-13 18:00:20,717 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/home/gandiantx/lab-manager/server/app/public","stat":{"dev":2050,"mode":16893,"nlink":2,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7864370,"size":4096,"blocks":8,"atimeMs":1781344820714.8945,"mtimeMs":1781344820714.8945,"ctimeMs":1781344820714.8945,"birthtimeMs":1781344820714.8945},"remove":false,"isDirectory":true,"isFile":false}
+2026-06-13 18:27:37,090 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/config/config.default.ts change
+2026-06-13 18:27:36,886 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/config/config.default.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503057,"size":904,"blocks":8,"atimeMs":1781344253087.2454,"mtimeMs":1781346456885.8003,"ctimeMs":1781346456885.8003,"birthtimeMs":1781344252110.584},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:27:36,889 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/config/config.default.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503057,"size":904,"blocks":8,"atimeMs":1781344253087.2454,"mtimeMs":1781346456885.8003,"ctimeMs":1781346456885.8003,"birthtimeMs":1781344252110.584},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:27:47,929 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/middleware/auth.ts change
+2026-06-13 18:27:47,727 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/middleware/auth.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503054,"size":658,"blocks":8,"atimeMs":1781344797490.165,"mtimeMs":1781346467726.1372,"ctimeMs":1781346467726.1372,"birthtimeMs":1781344242812.7424},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:27:47,728 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/middleware/auth.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503054,"size":658,"blocks":8,"atimeMs":1781344797490.165,"mtimeMs":1781346467726.1372,"ctimeMs":1781346467726.1372,"birthtimeMs":1781344242812.7424},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:27:57,944 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/user.ts change
+2026-06-13 18:27:57,742 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":0,"blocks":0,"atimeMs":1781344103551.8726,"mtimeMs":1781346477740.962,"ctimeMs":1781346477740.962,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:27:57,743 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":3510,"blocks":8,"atimeMs":1781344103551.8726,"mtimeMs":1781346477741.962,"ctimeMs":1781346477741.962,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:09,694 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/user.ts change
+2026-06-13 18:28:09,492 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":3474,"blocks":8,"atimeMs":1781346478012.6206,"mtimeMs":1781346489491.9558,"ctimeMs":1781346489491.9558,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:09,493 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":3474,"blocks":8,"atimeMs":1781346478012.6206,"mtimeMs":1781346489491.9558,"ctimeMs":1781346489491.9558,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:18,406 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/user.ts change
+2026-06-13 18:28:18,202 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":3438,"blocks":8,"atimeMs":1781346489866.3523,"mtimeMs":1781346498202.4138,"ctimeMs":1781346498202.4138,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:18,204 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":3438,"blocks":8,"atimeMs":1781346489866.3523,"mtimeMs":1781346498202.4138,"ctimeMs":1781346498202.4138,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:26,433 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/user.ts change
+2026-06-13 18:28:26,230 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":3402,"blocks":8,"atimeMs":1781346498632.5962,"mtimeMs":1781346506229.4634,"ctimeMs":1781346506229.4634,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:26,231 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":3402,"blocks":8,"atimeMs":1781346498632.5962,"mtimeMs":1781346506229.4634,"ctimeMs":1781346506229.4634,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:36,801 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/lab.ts change
+2026-06-13 18:28:36,600 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/lab.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503035,"size":0,"blocks":0,"atimeMs":1781344112531.9597,"mtimeMs":1781346516598.282,"ctimeMs":1781346516598.282,"birthtimeMs":1781344111812.972},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:36,601 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/lab.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503035,"size":2465,"blocks":8,"atimeMs":1781344112531.9597,"mtimeMs":1781346516599.9011,"ctimeMs":1781346516599.9011,"birthtimeMs":1781344111812.972},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:38,878 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/lab.ts change
+2026-06-13 18:28:39,376 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/lab.ts change
+2026-06-13 18:28:38,676 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/lab.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503035,"size":2429,"blocks":8,"atimeMs":1781346516601.282,"mtimeMs":1781346518675.9119,"ctimeMs":1781346518675.9119,"birthtimeMs":1781344111812.972},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:39,175 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/lab.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503035,"size":2429,"blocks":8,"atimeMs":1781346518865.2424,"mtimeMs":1781346519174.8745,"ctimeMs":1781346519174.8745,"birthtimeMs":1781344111812.972},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:46,475 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":2439,"blocks":8,"atimeMs":1781344122544.4504,"mtimeMs":1781346526473.1094,"ctimeMs":1781346526473.1094,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:46,475 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":2439,"blocks":8,"atimeMs":1781344122544.4504,"mtimeMs":1781346526473.1094,"ctimeMs":1781346526473.1094,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:46,676 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/device.ts change
+2026-06-13 18:28:48,873 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/device.ts change
+2026-06-13 18:28:48,670 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":0,"blocks":0,"atimeMs":1781346526578.1074,"mtimeMs":1781346528668.0708,"ctimeMs":1781346528668.0708,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:48,672 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":2403,"blocks":8,"atimeMs":1781346526578.1074,"mtimeMs":1781346528670.0708,"ctimeMs":1781346528670.0708,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:50,501 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":2367,"blocks":8,"atimeMs":1781346529100.0635,"mtimeMs":1781346530499.0388,"ctimeMs":1781346530499.0388,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:50,701 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/device.ts change
+2026-06-13 18:28:59,923 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/reservation.ts change
+2026-06-13 18:28:59,718 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503038,"size":0,"blocks":0,"atimeMs":1781344139075.461,"mtimeMs":1781346539717.8777,"ctimeMs":1781346539717.8777,"birthtimeMs":1781344138789.513},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:28:59,720 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503038,"size":4670,"blocks":16,"atimeMs":1781344139075.461,"mtimeMs":1781346539718.6848,"ctimeMs":1781346539718.6848,"birthtimeMs":1781344138789.513},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:02,412 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503038,"size":4634,"blocks":16,"atimeMs":1781346540572.5544,"mtimeMs":1781346542411.8306,"ctimeMs":1781346542411.8306,"birthtimeMs":1781344138789.513},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:02,413 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503038,"size":4634,"blocks":16,"atimeMs":1781346540572.5544,"mtimeMs":1781346542411.8306,"ctimeMs":1781346542411.8306,"birthtimeMs":1781344138789.513},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:02,726 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/reservation.ts change
+2026-06-13 18:29:02,524 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503038,"size":4634,"blocks":16,"atimeMs":1781346542517.8286,"mtimeMs":1781346542523.8286,"ctimeMs":1781346542523.8286,"birthtimeMs":1781344138789.513},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:02,525 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503038,"size":4634,"blocks":16,"atimeMs":1781346542517.8286,"mtimeMs":1781346542523.8286,"ctimeMs":1781346542523.8286,"birthtimeMs":1781344138789.513},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:11,454 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":3294,"blocks":8,"atimeMs":1781344150920.2944,"mtimeMs":1781346551453.7344,"ctimeMs":1781346551453.7344,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:11,458 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":3294,"blocks":8,"atimeMs":1781344150920.2944,"mtimeMs":1781346551453.7344,"ctimeMs":1781346551453.7344,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:11,658 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/repair.ts change
+2026-06-13 18:29:13,973 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/repair.ts change
+2026-06-13 18:29:13,772 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":3258,"blocks":8,"atimeMs":1781346551782.6667,"mtimeMs":1781346553770.632,"ctimeMs":1781346553770.632,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:13,772 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":3258,"blocks":8,"atimeMs":1781346551782.6667,"mtimeMs":1781346553770.632,"ctimeMs":1781346553770.632,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:15,153 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/repair.ts change
+2026-06-13 18:29:14,951 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":0,"blocks":0,"atimeMs":1781346553870.6301,"mtimeMs":1781346554949.6113,"ctimeMs":1781346554949.6113,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:14,951 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":3258,"blocks":8,"atimeMs":1781346553870.6301,"mtimeMs":1781346554950.9597,"ctimeMs":1781346554950.9597,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:24,112 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/notice.ts change
+2026-06-13 18:29:23,911 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503042,"size":1682,"blocks":8,"atimeMs":1781344157586.0151,"mtimeMs":1781346563911.64,"ctimeMs":1781346563911.64,"birthtimeMs":1781344157268.1985},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:23,912 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503042,"size":1682,"blocks":8,"atimeMs":1781344157586.0151,"mtimeMs":1781346563911.64,"ctimeMs":1781346563911.64,"birthtimeMs":1781344157268.1985},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:26,509 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503042,"size":1646,"blocks":8,"atimeMs":1781346564034.4526,"mtimeMs":1781346566509.358,"ctimeMs":1781346566509.358,"birthtimeMs":1781344157268.1985},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:26,510 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503042,"size":1646,"blocks":8,"atimeMs":1781346564034.4526,"mtimeMs":1781346566509.358,"ctimeMs":1781346566509.358,"birthtimeMs":1781344157268.1985},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:26,711 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/notice.ts change
+2026-06-13 18:29:29,296 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/notice.ts change
+2026-06-13 18:29:29,094 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503042,"size":0,"blocks":0,"atimeMs":1781346566775.4597,"mtimeMs":1781346569093.3643,"ctimeMs":1781346569093.3643,"birthtimeMs":1781344157268.1985},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:29,095 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503042,"size":1610,"blocks":8,"atimeMs":1781346566775.4597,"mtimeMs":1781346569094.6497,"ctimeMs":1781346569094.6497,"birthtimeMs":1781344157268.1985},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:46,481 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/home/gandiantx/lab-manager/server/app/extend/helper.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503063,"size":0,"blocks":0,"atimeMs":1781346586478.0603,"mtimeMs":1781346586478.0603,"ctimeMs":1781346586478.0603,"birthtimeMs":1781346586478.0603},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:46,681 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/extend/helper.ts rename
+2026-06-13 18:29:47,407 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/extend/helper.ts change
+2026-06-13 18:29:47,205 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/extend/helper.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503063,"size":337,"blocks":8,"atimeMs":1781346586865.0535,"mtimeMs":1781346587204.0476,"ctimeMs":1781346587204.0476,"birthtimeMs":1781346586478.0603},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:47,206 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/extend/helper.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503063,"size":337,"blocks":8,"atimeMs":1781346586865.0535,"mtimeMs":1781346587204.0476,"ctimeMs":1781346587204.0476,"birthtimeMs":1781346586478.0603},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:54,988 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/user.ts change
+2026-06-13 18:29:54,787 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":3397,"blocks":8,"atimeMs":1781346506513.4585,"mtimeMs":1781346594786.5784,"ctimeMs":1781346594786.5784,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:29:54,788 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":3397,"blocks":8,"atimeMs":1781346506513.4585,"mtimeMs":1781346594786.5784,"ctimeMs":1781346594786.5784,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:00,266 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/user.ts change
+2026-06-13 18:30:00,065 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":0,"blocks":0,"atimeMs":1781346594972.6113,"mtimeMs":1781346600064.823,"ctimeMs":1781346600064.823,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:00,066 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503033,"size":3377,"blocks":8,"atimeMs":1781346594972.6113,"mtimeMs":1781346600065.823,"ctimeMs":1781346600065.823,"birthtimeMs":1781344102494.1304},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:07,900 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/lab.ts change
+2026-06-13 18:30:07,699 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/lab.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503035,"size":2424,"blocks":8,"atimeMs":1781346519446.3457,"mtimeMs":1781346607697.6895,"ctimeMs":1781346607697.6895,"birthtimeMs":1781344111812.972},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:19,902 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/lab.ts change
+2026-06-13 18:30:19,700 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/lab.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503035,"size":0,"blocks":0,"atimeMs":1781346607789.4072,"mtimeMs":1781346619698.48,"ctimeMs":1781346619698.48,"birthtimeMs":1781344111812.972},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:19,701 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/lab.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503035,"size":2424,"blocks":8,"atimeMs":1781346607789.4072,"mtimeMs":1781346619699.48,"ctimeMs":1781346619699.48,"birthtimeMs":1781344111812.972},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:26,361 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/lab.ts change
+2026-06-13 18:30:26,161 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/lab.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503035,"size":0,"blocks":0,"atimeMs":1781346619987.0088,"mtimeMs":1781346626159.367,"ctimeMs":1781346626159.367,"birthtimeMs":1781344111812.972},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:26,161 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/lab.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503035,"size":2404,"blocks":8,"atimeMs":1781346619987.0088,"mtimeMs":1781346626161.013,"ctimeMs":1781346626161.013,"birthtimeMs":1781344111812.972},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:37,577 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/device.ts change
+2026-06-13 18:30:37,376 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":0,"blocks":0,"atimeMs":1781346530762.0342,"mtimeMs":1781346637374.1711,"ctimeMs":1781346637374.1711,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:37,377 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":2362,"blocks":8,"atimeMs":1781346530762.0342,"mtimeMs":1781346637375.1711,"ctimeMs":1781346637375.1711,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:39,149 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/device.ts change
+2026-06-13 18:30:38,945 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":0,"blocks":0,"atimeMs":1781346637668.6677,"mtimeMs":1781346638943.1438,"ctimeMs":1781346638943.1438,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:38,946 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":2347,"blocks":8,"atimeMs":1781346637668.6677,"mtimeMs":1781346638944.1438,"ctimeMs":1781346638944.1438,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:49,857 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/reservation.ts change
+2026-06-13 18:30:49,652 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503038,"size":4629,"blocks":16,"atimeMs":1781346542526.8286,"mtimeMs":1781346649652.3794,"ctimeMs":1781346649652.3794,"birthtimeMs":1781344138789.513},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:49,654 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503038,"size":4629,"blocks":16,"atimeMs":1781346542526.8286,"mtimeMs":1781346649652.3794,"ctimeMs":1781346649652.3794,"birthtimeMs":1781344138789.513},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:52,261 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/reservation.ts change
+2026-06-13 18:30:52,054 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503038,"size":0,"blocks":0,"atimeMs":1781346649819.9539,"mtimeMs":1781346652052.9148,"ctimeMs":1781346652052.9148,"birthtimeMs":1781344138789.513},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:30:52,058 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503038,"size":4609,"blocks":16,"atimeMs":1781346649819.9539,"mtimeMs":1781346652055.9148,"ctimeMs":1781346652055.9148,"birthtimeMs":1781344138789.513},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:01,487 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/repair.ts change
+2026-06-13 18:31:01,285 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":0,"blocks":0,"atimeMs":1781346554974.6108,"mtimeMs":1781346661283.7537,"ctimeMs":1781346661283.7537,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:01,286 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":3253,"blocks":8,"atimeMs":1781346554974.6108,"mtimeMs":1781346661284.7537,"ctimeMs":1781346661284.7537,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:02,186 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/repair.ts change
+2026-06-13 18:31:01,983 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":3233,"blocks":8,"atimeMs":1781346661429.751,"mtimeMs":1781346661982.742,"ctimeMs":1781346661982.742,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:01,984 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":3233,"blocks":8,"atimeMs":1781346661429.751,"mtimeMs":1781346661982.742,"ctimeMs":1781346661982.742,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:10,537 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/notice.ts change
+2026-06-13 18:31:10,336 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503042,"size":1605,"blocks":8,"atimeMs":1781346569362.3594,"mtimeMs":1781346670335.8042,"ctimeMs":1781346670335.8042,"birthtimeMs":1781344157268.1985},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:10,336 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503042,"size":1605,"blocks":8,"atimeMs":1781346569362.3594,"mtimeMs":1781346670335.8042,"ctimeMs":1781346670335.8042,"birthtimeMs":1781344157268.1985},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:10,891 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/notice.ts change
+2026-06-13 18:31:10,688 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503042,"size":1585,"blocks":8,"atimeMs":1781346670441.5938,"mtimeMs":1781346670687.5894,"ctimeMs":1781346670687.5894,"birthtimeMs":1781344157268.1985},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:10,691 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503042,"size":1585,"blocks":8,"atimeMs":1781346670441.5938,"mtimeMs":1781346670687.5894,"ctimeMs":1781346670687.5894,"birthtimeMs":1781344157268.1985},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:23,200 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/config/config.default.ts change
+2026-06-13 18:31:22,996 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/config/config.default.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503057,"size":1020,"blocks":8,"atimeMs":1781346457163.3926,"mtimeMs":1781346682995.9275,"ctimeMs":1781346682995.9275,"birthtimeMs":1781344252110.584},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:22,997 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/config/config.default.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503057,"size":1020,"blocks":8,"atimeMs":1781346457163.3926,"mtimeMs":1781346682995.9275,"ctimeMs":1781346682995.9275,"birthtimeMs":1781344252110.584},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:44,213 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/config/config.default.ts change
+2026-06-13 18:31:44,011 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/config/config.default.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503057,"size":0,"blocks":0,"atimeMs":1781346683037.3738,"mtimeMs":1781346704011.0076,"ctimeMs":1781346704011.0076,"birthtimeMs":1781344252110.584},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:31:44,012 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/config/config.default.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503057,"size":1067,"blocks":8,"atimeMs":1781346683037.3738,"mtimeMs":1781346704011.8577,"ctimeMs":1781346704011.8577,"birthtimeMs":1781344252110.584},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:32:15,212 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/repair.ts change
+2026-06-13 18:32:15,009 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":3535,"blocks":8,"atimeMs":1781346662160.492,"mtimeMs":1781346735009.4668,"ctimeMs":1781346735009.4668,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 18:32:15,011 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503040,"size":3535,"blocks":8,"atimeMs":1781346662160.492,"mtimeMs":1781346735009.4668,"ctimeMs":1781346735009.4668,"birthtimeMs":1781344150366.316},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:00:09,243 INFO 880540 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-06-13 19:00:08,901 INFO 880540 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-06-13 19:00:09,184 INFO 880540 [egg:core] dump config after load, 5ms
+2026-06-13 19:00:09,217 INFO 880540 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-06-13 19:00:09,217 INFO 880540 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-06-13 19:00:09,217 INFO 880540 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-06-13 19:00:09,217 INFO 880540 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-06-13 19:00:09,217 INFO 880540 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-06-13 19:00:09,218 INFO 880540 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-06-13 19:00:09,218 INFO 880540 [egg-watcher:agent] watcher start success
+2026-06-13 19:00:09,250 INFO 880540 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇ [706ms] - #0 Process Start
+          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2655ms] - #1 Application Start
+          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2130ms] - #2 Load Plugin
+                                          ▇ [79ms] - #3 Load Config
+                                          ▇ [60ms] - #4 Require(0) config/config.default.ts
+                                           ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                           ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                           ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                           ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                           ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                           ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                           ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                           ▇ [1ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                           ▇ [1ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                           ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                           ▇ [1ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                           ▇ [1ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                           ▇ [1ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                                           ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                                           ▇ [1ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                                           ▇ [0ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                                           ▇ [0ms] - #21 Require(17) config/config.default.ts
+                                           ▇ [1ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                                           ▇ [1ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                                           ▇ [1ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                                           ▇ [1ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                                           ▇ [40ms] - #26 Load extend/agent.js
+                                           ▇ [1ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                                           ▇ [34ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                                           ▇ [0ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                                            ▇ [36ms] - #30 Load extend/context.js
+                                            ▇ [5ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                                            ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                                            ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                                            ▇ [8ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                                            ▇ [1ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                                            ▇ [0ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                                            ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                                            ▇ [16ms] - #38 Require(32) app/extend/context.ts
+                                            ▇ [12ms] - #39 Load agent.js
+                                            ▇ [0ms] - #40 Require(33) node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                                            ▇ [4ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                                            ▇ [0ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                                            ▇ [4ms] - #44 Require(37) node_modules/egg-development/agent.js
+                                            ▇ [0ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                                            ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                                            ▇ [1ms] - #47 Require(40) node_modules/egg/agent.js
+                                            ▇▇▇▇ [314ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                            ▇▇▇▇ [302ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                            ▇▇▇▇▇ [340ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                               ▇ [75ms] - #51 Load "Symbol(model)" to Application
+                                                ▇ [65ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-06-13 19:00:09,250 INFO 880540 [egg:core] dump config after ready, 4ms
+2026-06-13 19:00:33,966 INFO 881732 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-06-13 19:00:33,576 INFO 881732 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-06-13 19:00:33,904 INFO 881732 [egg:core] dump config after load, 6ms
+2026-06-13 19:00:33,940 INFO 881732 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-06-13 19:00:33,940 INFO 881732 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-06-13 19:00:33,941 INFO 881732 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-06-13 19:00:33,941 INFO 881732 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-06-13 19:00:33,941 INFO 881732 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-06-13 19:00:33,941 INFO 881732 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-06-13 19:00:33,941 INFO 881732 [egg-watcher:agent] watcher start success
+2026-06-13 19:00:33,973 INFO 881732 egg start timeline:
+▇▇▇▇▇▇▇▇▇ [665ms] - #0 Process Start
+         ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2682ms] - #1 Application Start
+          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2111ms] - #2 Load Plugin
+                                         ▇ [75ms] - #3 Load Config
+                                         ▇ [57ms] - #4 Require(0) config/config.default.ts
+                                          ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                          ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                          ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                          ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                          ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                          ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                          ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                          ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                          ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                          ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                          ▇ [1ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                          ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                          ▇ [0ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                                          ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                                          ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                                          ▇ [1ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                                          ▇ [0ms] - #21 Require(17) config/config.default.ts
+                                          ▇ [0ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                                          ▇ [0ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                                          ▇ [0ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                                          ▇ [0ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                                          ▇ [41ms] - #26 Load extend/agent.js
+                                          ▇ [0ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                                          ▇ [34ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                                           ▇ [1ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                                           ▇ [37ms] - #30 Load extend/context.js
+                                           ▇ [5ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                                           ▇ [0ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                                           ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                                           ▇ [8ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                                           ▇ [0ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                                           ▇ [0ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                                           ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                                           ▇ [16ms] - #38 Require(32) app/extend/context.ts
+                                           ▇ [12ms] - #39 Load agent.js
+                                           ▇ [0ms] - #40 Require(33) node_modules/egg-security/agent.js
+                                           ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                                           ▇ [3ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                                           ▇ [0ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                                           ▇ [4ms] - #44 Require(37) node_modules/egg-development/agent.js
+                                            ▇ [1ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                                            ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                                            ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                                            ▇▇▇▇▇ [362ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                            ▇▇▇▇▇ [349ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                            ▇▇▇▇▇ [378ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                               ▇ [75ms] - #51 Load "Symbol(model)" to Application
+                                                ▇ [70ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-06-13 19:00:33,973 INFO 881732 [egg:core] dump config after ready, 5ms
+2026-06-13 19:00:46,737 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/device.ts change
+2026-06-13 19:00:46,536 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":0,"blocks":0,"atimeMs":1781346639035.142,"mtimeMs":1781348446534.4082,"ctimeMs":1781348446534.4082,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:00:46,536 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":2342,"blocks":8,"atimeMs":1781346639035.142,"mtimeMs":1781348446535.408,"ctimeMs":1781348446535.408,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:00:52,863 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/service/device.ts change
+2026-06-13 19:00:52,661 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":0,"blocks":0,"atimeMs":1781348446714.4055,"mtimeMs":1781348452659.3193,"ctimeMs":1781348452659.3193,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:00:52,662 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/service/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503036,"size":2342,"blocks":8,"atimeMs":1781348446714.4055,"mtimeMs":1781348452660.3193,"ctimeMs":1781348452660.3193,"birthtimeMs":1781344121655.8044},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:01:11,886 INFO 883530 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-06-13 19:01:11,546 INFO 883530 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-06-13 19:01:11,828 INFO 883530 [egg:core] dump config after load, 4ms
+2026-06-13 19:01:11,861 INFO 883530 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-06-13 19:01:11,861 INFO 883530 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-06-13 19:01:11,861 INFO 883530 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-06-13 19:01:11,862 INFO 883530 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-06-13 19:01:11,862 INFO 883530 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-06-13 19:01:11,862 INFO 883530 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-06-13 19:01:11,862 INFO 883530 [egg-watcher:agent] watcher start success
+2026-06-13 19:01:11,893 INFO 883530 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇ [681ms] - #0 Process Start
+          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2594ms] - #1 Application Start
+          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2076ms] - #2 Load Plugin
+                                          ▇ [75ms] - #3 Load Config
+                                          ▇ [58ms] - #4 Require(0) config/config.default.ts
+                                           ▇ [1ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                           ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                           ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                           ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                           ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                           ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                           ▇ [1ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                           ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                           ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                           ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                           ▇ [1ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                           ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                           ▇ [0ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                                           ▇ [1ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                                           ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                                           ▇ [1ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                                           ▇ [0ms] - #21 Require(17) config/config.default.ts
+                                           ▇ [0ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                                           ▇ [0ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                                           ▇ [0ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                                           ▇ [0ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                                           ▇ [40ms] - #26 Load extend/agent.js
+                                           ▇ [0ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                                           ▇ [34ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                                           ▇ [1ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                                           ▇ [37ms] - #30 Load extend/context.js
+                                           ▇ [4ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                                            ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                                            ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                                            ▇ [8ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                                            ▇ [1ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                                            ▇ [1ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                                            ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                                            ▇ [16ms] - #38 Require(32) app/extend/context.ts
+                                            ▇ [12ms] - #39 Load agent.js
+                                            ▇ [0ms] - #40 Require(33) node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                                            ▇ [3ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                                            ▇ [0ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                                            ▇ [5ms] - #44 Require(37) node_modules/egg-development/agent.js
+                                            ▇ [0ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                                            ▇ [1ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                                            ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                                            ▇▇▇▇ [312ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                            ▇▇▇▇ [301ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                            ▇▇▇▇ [328ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                               ▇ [72ms] - #51 Load "Symbol(model)" to Application
+                                                ▇ [64ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-06-13 19:01:11,893 INFO 883530 [egg:core] dump config after ready, 5ms
+2026-06-13 19:01:29,497 INFO 884446 [egg-sequelize](0ms) Executed (default): SELECT 1+1 AS result
+2026-06-13 19:01:29,161 INFO 884446 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-06-13 19:01:29,440 INFO 884446 [egg:core] dump config after load, 5ms
+2026-06-13 19:01:29,472 INFO 884446 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-06-13 19:01:29,472 INFO 884446 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-06-13 19:01:29,472 INFO 884446 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-06-13 19:01:29,472 INFO 884446 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-06-13 19:01:29,473 INFO 884446 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-06-13 19:01:29,473 INFO 884446 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-06-13 19:01:29,473 INFO 884446 [egg-watcher:agent] watcher start success
+2026-06-13 19:01:29,504 INFO 884446 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇ [678ms] - #0 Process Start
+          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2614ms] - #1 Application Start
+          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2098ms] - #2 Load Plugin
+                                          ▇ [75ms] - #3 Load Config
+                                          ▇ [57ms] - #4 Require(0) config/config.default.ts
+                                           ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                           ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                           ▇ [1ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                           ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                           ▇ [1ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                           ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                           ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                           ▇ [1ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                           ▇ [1ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                           ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                           ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                           ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                           ▇ [0ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                                           ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                                           ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                                           ▇ [1ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                                           ▇ [0ms] - #21 Require(17) config/config.default.ts
+                                           ▇ [0ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                                           ▇ [0ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                                           ▇ [0ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                                           ▇ [0ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                                           ▇ [41ms] - #26 Load extend/agent.js
+                                           ▇ [0ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                                           ▇ [35ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                                           ▇ [1ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                                            ▇ [36ms] - #30 Load extend/context.js
+                                            ▇ [5ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                                            ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                                            ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                                            ▇ [8ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                                            ▇ [1ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                                            ▇ [0ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                                            ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                                            ▇ [16ms] - #38 Require(32) app/extend/context.ts
+                                            ▇ [13ms] - #39 Load agent.js
+                                            ▇ [0ms] - #40 Require(33) node_modules/egg-security/agent.js
+                                            ▇ [1ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                                            ▇ [3ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                                            ▇ [1ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                                            ▇ [5ms] - #44 Require(37) node_modules/egg-development/agent.js
+                                            ▇ [0ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                                            ▇ [1ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                                            ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                                            ▇▇▇▇ [309ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                            ▇▇▇▇ [298ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                            ▇▇▇▇ [325ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                               ▇ [71ms] - #51 Load "Symbol(model)" to Application
+                                                ▇ [63ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-06-13 19:01:29,504 INFO 884446 [egg:core] dump config after ready, 5ms
+2026-06-13 19:01:45,257 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503045,"size":0,"blocks":0,"atimeMs":1781344194865.5586,"mtimeMs":1781348505256.5552,"ctimeMs":1781348505256.5552,"birthtimeMs":1781344194453.5657},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:01:45,258 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/user.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503045,"size":1852,"blocks":8,"atimeMs":1781344194865.5586,"mtimeMs":1781348505256.5552,"ctimeMs":1781348505256.5552,"birthtimeMs":1781344194453.5657},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:01:45,458 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/controller/user.ts change
+2026-06-13 19:02:02,364 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/controller/notice.ts change
+2026-06-13 19:02:02,163 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503050,"size":0,"blocks":0,"atimeMs":1781344218618.1543,"mtimeMs":1781348522161.3088,"ctimeMs":1781348522161.3088,"birthtimeMs":1781344217790.1682},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:02:02,164 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/notice.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503050,"size":1139,"blocks":8,"atimeMs":1781344218618.1543,"mtimeMs":1781348522162.3088,"ctimeMs":1781348522162.3088,"birthtimeMs":1781344217790.1682},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:02:06,778 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/controller/repair.ts change
+2026-06-13 19:02:06,577 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503049,"size":1387,"blocks":8,"atimeMs":1781344214278.228,"mtimeMs":1781348526575.2444,"ctimeMs":1781348526575.2444,"birthtimeMs":1781344213826.2358},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:02:06,578 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/repair.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503049,"size":1387,"blocks":8,"atimeMs":1781344214278.228,"mtimeMs":1781348526575.2444,"ctimeMs":1781348526575.2444,"birthtimeMs":1781344213826.2358},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:02:08,089 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/controller/reservation.ts change
+2026-06-13 19:02:07,889 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/reservation.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503048,"size":1753,"blocks":8,"atimeMs":1781344209307.3127,"mtimeMs":1781348527886.2253,"ctimeMs":1781348527886.2253,"birthtimeMs":1781344208853.3206},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:02:09,240 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/controller/device.ts change
+2026-06-13 19:02:09,039 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503047,"size":1190,"blocks":8,"atimeMs":1781344204060.402,"mtimeMs":1781348529038.2085,"ctimeMs":1781348529038.2085,"birthtimeMs":1781344203614.4097},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:02:09,040 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/device.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503047,"size":1190,"blocks":8,"atimeMs":1781344204060.402,"mtimeMs":1781348529038.2085,"ctimeMs":1781348529038.2085,"birthtimeMs":1781344203614.4097},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:02:10,007 WARN 748057 [agent:development] reload worker because /home/gandiantx/lab-manager/server/app/controller/lab.ts change
+2026-06-13 19:02:09,805 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"change","path":"/home/gandiantx/lab-manager/server/app/controller/lab.ts","stat":{"dev":2050,"mode":33204,"nlink":1,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7503046,"size":1369,"blocks":8,"atimeMs":1781344199722.4758,"mtimeMs":1781348529803.1973,"ctimeMs":1781348529803.1973,"birthtimeMs":1781344199158.4856},"remove":false,"isDirectory":false,"isFile":true}
+2026-06-13 19:02:27,128 INFO 886925 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-06-13 19:02:26,790 INFO 886925 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-06-13 19:02:27,071 INFO 886925 [egg:core] dump config after load, 5ms
+2026-06-13 19:02:27,103 INFO 886925 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-06-13 19:02:27,103 INFO 886925 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-06-13 19:02:27,103 INFO 886925 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-06-13 19:02:27,103 INFO 886925 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-06-13 19:02:27,103 INFO 886925 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-06-13 19:02:27,103 INFO 886925 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-06-13 19:02:27,103 INFO 886925 [egg-watcher:agent] watcher start success
+2026-06-13 19:02:27,135 INFO 886925 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇ [725ms] - #0 Process Start
+           ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2546ms] - #1 Application Start
+           ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2027ms] - #2 Load Plugin
+                                          ▇ [75ms] - #3 Load Config
+                                          ▇ [57ms] - #4 Require(0) config/config.default.ts
+                                           ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                           ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                           ▇ [1ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                           ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                           ▇ [1ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                           ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                           ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                           ▇ [1ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                           ▇ [1ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                           ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                           ▇ [1ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                           ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                           ▇ [0ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                                           ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                                           ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                                           ▇ [0ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                                           ▇ [0ms] - #21 Require(17) config/config.default.ts
+                                           ▇ [0ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                                           ▇ [0ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                                           ▇ [0ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                                           ▇ [0ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                                           ▇ [41ms] - #26 Load extend/agent.js
+                                           ▇ [0ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                                           ▇ [34ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                                           ▇ [1ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                                           ▇ [37ms] - #30 Load extend/context.js
+                                           ▇ [5ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                                            ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                                            ▇ [1ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                                            ▇ [8ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                                            ▇ [1ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                                            ▇ [0ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                                            ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                                            ▇ [16ms] - #38 Require(32) app/extend/context.ts
+                                            ▇ [12ms] - #39 Load agent.js
+                                            ▇ [0ms] - #40 Require(33) node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                                            ▇ [3ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                                            ▇ [1ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                                            ▇ [5ms] - #44 Require(37) node_modules/egg-development/agent.js
+                                            ▇ [0ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                                            ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                                            ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                                            ▇▇▇▇ [311ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                            ▇▇▇▇ [300ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                            ▇▇▇▇▇ [336ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                               ▇ [73ms] - #51 Load "Symbol(model)" to Application
+                                                ▇ [63ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-06-13 19:02:27,135 INFO 886925 [egg:core] dump config after ready, 4ms
+2026-06-13 19:02:58,382 INFO 888254 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-06-13 19:02:58,028 INFO 888254 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-06-13 19:02:58,322 INFO 888254 [egg:core] dump config after load, 5ms
+2026-06-13 19:02:58,356 INFO 888254 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-06-13 19:02:58,356 INFO 888254 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-06-13 19:02:58,356 INFO 888254 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-06-13 19:02:58,356 INFO 888254 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-06-13 19:02:58,357 INFO 888254 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-06-13 19:02:58,357 INFO 888254 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-06-13 19:02:58,357 INFO 888254 [egg-watcher:agent] watcher start success
+2026-06-13 19:02:58,389 INFO 888254 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇▇ [733ms] - #0 Process Start
+           ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2558ms] - #1 Application Start
+           ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2020ms] - #2 Load Plugin
+                                         ▇ [79ms] - #3 Load Config
+                                         ▇ [60ms] - #4 Require(0) config/config.default.ts
+                                          ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                          ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                          ▇ [1ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                          ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                          ▇ [1ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                          ▇ [1ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                          ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                          ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                          ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                          ▇ [1ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                          ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                          ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                          ▇ [1ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                                          ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                                          ▇ [1ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                                           ▇ [0ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                                           ▇ [0ms] - #21 Require(17) config/config.default.ts
+                                           ▇ [1ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                                           ▇ [1ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                                           ▇ [0ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                                           ▇ [0ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                                           ▇ [41ms] - #26 Load extend/agent.js
+                                           ▇ [1ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                                           ▇ [35ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                                           ▇ [1ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                                           ▇ [36ms] - #30 Load extend/context.js
+                                           ▇ [5ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                                           ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                                           ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                                           ▇ [7ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                                           ▇ [0ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                                           ▇ [0ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                                           ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                                            ▇ [16ms] - #38 Require(32) app/extend/context.ts
+                                            ▇ [12ms] - #39 Load agent.js
+                                            ▇ [0ms] - #40 Require(33) node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                                            ▇ [4ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                                            ▇ [0ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                                            ▇ [4ms] - #44 Require(37) node_modules/egg-development/agent.js
+                                            ▇ [1ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                                            ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                                            ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                                            ▇▇▇▇ [326ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                            ▇▇▇▇ [313ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                            ▇▇▇▇▇ [348ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                               ▇ [76ms] - #51 Load "Symbol(model)" to Application
+                                                ▇ [66ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-06-13 19:02:58,389 INFO 888254 [egg:core] dump config after ready, 5ms

@@ -1,5 +1,6 @@
 {
   "keys": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+  "jwtSecret": "/home/gandiantx/lab-manager/server/config/config.default.ts",
   "security": {
     "csrf": {
       "enable": "/home/gandiantx/lab-manager/server/config/config.default.ts",
@@ -214,6 +215,7 @@
     },
     "dependencies": {
       "bcryptjs": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "dotenv": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
       "egg": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
       "egg-cors": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
       "egg-jwt": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
