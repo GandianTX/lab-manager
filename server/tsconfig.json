@@ -1,0 +1,26 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "types": ["node"],
+    "paths": {
+      "@/*": ["app/*"]
+    }
+  },
+  "include": ["app/**/*", "config/**/*", "typings/**/*"],
+  "exclude": ["node_modules", "dist", "logs", "run"]
+}

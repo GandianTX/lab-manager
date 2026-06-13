@@ -114,8 +114,32 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/resource/list",
-    "regexp": "/^\\/api\\/resource\\/list(?:\\/(?=$))?$/",
+    "path": "/api/lab/list",
+    "regexp": "/^\\/api\\/lab\\/list(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/lab/detail/:id",
+    "regexp": "/^\\/api\\/lab\\/detail\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -126,8 +150,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/resource/create",
-    "regexp": "/^\\/api\\/resource\\/create(?:\\/(?=$))?$/",
+    "path": "/api/lab/create",
+    "regexp": "/^\\/api\\/lab\\/create(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -149,8 +173,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/resource/update/:id",
-    "regexp": "/^\\/api\\/resource\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/api/lab/update/:id",
+    "regexp": "/^\\/api\\/lab\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -172,8 +196,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/resource/delete/:id",
-    "regexp": "/^\\/api\\/resource\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/api/lab/delete/:id",
+    "regexp": "/^\\/api\\/lab\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -185,8 +209,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/resource/category/list",
-    "regexp": "/^\\/api\\/resource\\/category\\/list(?:\\/(?=$))?$/",
+    "path": "/api/device/list",
+    "regexp": "/^\\/api\\/device\\/list(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -197,8 +221,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/resource/category/create",
-    "regexp": "/^\\/api\\/resource\\/category\\/create(?:\\/(?=$))?$/",
+    "path": "/api/device/create",
+    "regexp": "/^\\/api\\/device\\/create(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -220,8 +244,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/resource/category/update/:id",
-    "regexp": "/^\\/api\\/resource\\/category\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/api/device/update/:id",
+    "regexp": "/^\\/api\\/device\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -243,8 +267,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/resource/category/delete/:id",
-    "regexp": "/^\\/api\\/resource\\/category\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/api/device/delete/:id",
+    "regexp": "/^\\/api\\/device\\/delete\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -256,8 +280,8 @@
       "GET"
     ],
     "paramNames": [],
-    "path": "/api/borrow/list",
-    "regexp": "/^\\/api\\/borrow\\/list(?:\\/(?=$))?$/",
+    "path": "/api/reservation/list",
+    "regexp": "/^\\/api\\/reservation\\/list(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -268,8 +292,8 @@
       "POST"
     ],
     "paramNames": [],
-    "path": "/api/borrow/create",
-    "regexp": "/^\\/api\\/borrow\\/create(?:\\/(?=$))?$/",
+    "path": "/api/reservation/create",
+    "regexp": "/^\\/api\\/reservation\\/create(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -291,8 +315,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/borrow/approve/:id",
-    "regexp": "/^\\/api\\/borrow\\/approve\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/api/reservation/approve/:id",
+    "regexp": "/^\\/api\\/reservation\\/approve\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -314,8 +338,8 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/borrow/reject/:id",
-    "regexp": "/^\\/api\\/borrow\\/reject\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/api/reservation/reject/:id",
+    "regexp": "/^\\/api\\/reservation\\/reject\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -337,8 +361,125 @@
         "pattern": "[^\\/]+?"
       }
     ],
-    "path": "/api/borrow/return/:id",
-    "regexp": "/^\\/api\\/borrow\\/return\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "path": "/api/reservation/finish/:id",
+    "regexp": "/^\\/api\\/reservation\\/finish\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/reservation/cancel/:id",
+    "regexp": "/^\\/api\\/reservation\\/cancel\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "HEAD",
+      "GET"
+    ],
+    "paramNames": [],
+    "path": "/api/repair/list",
+    "regexp": "/^\\/api\\/repair\\/list(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "POST"
+    ],
+    "paramNames": [],
+    "path": "/api/repair/create",
+    "regexp": "/^\\/api\\/repair\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/repair/confirm/:id",
+    "regexp": "/^\\/api\\/repair\\/confirm\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/repair/reject/:id",
+    "regexp": "/^\\/api\\/repair\\/reject\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/repair/resolve/:id",
+    "regexp": "/^\\/api\\/repair\\/resolve\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]
@@ -364,6 +505,29 @@
     "paramNames": [],
     "path": "/api/notice/create",
     "regexp": "/^\\/api\\/notice\\/create(?:\\/(?=$))?$/",
+    "stack": [
+      "wrappedController"
+    ]
+  },
+  {
+    "name": null,
+    "methods": [
+      "PUT"
+    ],
+    "paramNames": [
+      {
+        "name": "id",
+        "prefix": "/",
+        "delimiter": "/",
+        "optional": false,
+        "repeat": false,
+        "partial": false,
+        "asterisk": false,
+        "pattern": "[^\\/]+?"
+      }
+    ],
+    "path": "/api/notice/update/:id",
+    "regexp": "/^\\/api\\/notice\\/update\\/((?:[^\\/]+?))(?:\\/(?=$))?$/",
     "stack": [
       "wrappedController"
     ]

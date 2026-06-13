@@ -7,10 +7,10 @@
     "declarations": true
   },
   "scripts": {
-    "dev": "egg-bin dev",
+    "dev": "egg-bin dev --ts",
     "start": "egg-scripts start --daemon --title=lab-manager-server",
     "stop": "egg-scripts stop --title=lab-manager-server",
-    "db:init": "node app/database/init.js"
+    "db:init": "ts-node app/database/init.ts"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -24,8 +24,14 @@
     "mysql2": "^3.9.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^25.9.3",
     "egg-bin": "^6.6.0",
-    "egg-mock": "^5.11.0"
+    "egg-mock": "^5.11.0",
+    "egg-ts-helper": "^3.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
   },
   "engines": {
     "node": ">=16.0.0"

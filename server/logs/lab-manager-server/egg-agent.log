@@ -2403,3 +2403,134 @@ hostname: ATRI
                                             ▇ [16ms] - #51 Load "Symbol(model)" to Application
                                              ▇▇▇▇ [67ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
 2026-05-30 10:08:59,044 INFO 30481 [egg:core] dump config after ready, 4ms
+2026-06-13 17:59:38,760 INFO 746420 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-06-13 17:59:38,421 INFO 746420 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-06-13 17:59:38,700 INFO 746420 [egg:core] dump config after load, 4ms
+2026-06-13 17:59:38,734 INFO 746420 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-06-13 17:59:38,734 INFO 746420 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-06-13 17:59:38,734 INFO 746420 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-06-13 17:59:38,734 INFO 746420 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-06-13 17:59:38,734 INFO 746420 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-06-13 17:59:38,734 INFO 746420 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-06-13 17:59:38,734 INFO 746420 [egg-watcher:agent] watcher start success
+2026-06-13 17:59:38,767 INFO 746420 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇ [678ms] - #0 Process Start
+          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2454ms] - #1 Application Start
+          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [1944ms] - #2 Load Plugin
+                                         ▇ [65ms] - #3 Load Config
+                                         ▇ [46ms] - #4 Require(0) config/config.default.ts
+                                          ▇ [0ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                          ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                          ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                          ▇ [1ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                          ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                          ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                          ▇ [0ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                          ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                          ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                          ▇ [0ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                          ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                          ▇ [1ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                          ▇ [0ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                                          ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                                          ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                                          ▇ [0ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                                          ▇ [0ms] - #21 Require(17) config/config.default.ts
+                                          ▇ [1ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                                          ▇ [1ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                                          ▇ [1ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                                          ▇ [1ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                                           ▇ [40ms] - #26 Load extend/agent.js
+                                           ▇ [1ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                                           ▇ [34ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                                           ▇ [1ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                                           ▇ [38ms] - #30 Load extend/context.js
+                                           ▇ [5ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                                           ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                                           ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                                           ▇ [8ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                                           ▇ [1ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                                           ▇ [1ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                                           ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                                           ▇ [18ms] - #38 Require(32) app/extend/context.ts
+                                            ▇ [12ms] - #39 Load agent.js
+                                            ▇ [1ms] - #40 Require(33) node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                                            ▇ [3ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                                            ▇ [1ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                                            ▇ [4ms] - #44 Require(37) node_modules/egg-development/agent.js
+                                            ▇ [1ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                                            ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                                            ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                                            ▇▇▇▇ [311ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                            ▇▇▇▇ [298ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                            ▇▇▇▇▇ [333ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                               ▇ [75ms] - #51 Load "Symbol(model)" to Application
+                                                ▇ [65ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-06-13 17:59:38,767 INFO 746420 [egg:core] dump config after ready, 5ms
+2026-06-13 18:00:17,239 INFO 748057 [egg-sequelize](1ms) Executed (default): SELECT 1+1 AS result
+2026-06-13 18:00:16,895 INFO 748057 [egg:logger] init all loggers with options: {"dir":"/home/gandiantx/lab-manager/server/logs/lab-manager-server","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"INFO","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"lab-manager-server-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":false,"enablePerformanceTimer":false,"enableFastContextLogger":false,"type":"agent","localStorage":{}}
+2026-06-13 18:00:17,180 INFO 748057 [egg:core] dump config after load, 4ms
+2026-06-13 18:00:17,213 INFO 748057 [egg-watcher] Start watching: ["/home/gandiantx/lab-manager/server/app","/home/gandiantx/lab-manager/server/config","/home/gandiantx/lab-manager/server/mocks","/home/gandiantx/lab-manager/server/mocks_proxy","/home/gandiantx/lab-manager/server/app.js"]
+2026-06-13 18:00:17,213 INFO 748057 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app"
+2026-06-13 18:00:17,213 INFO 748057 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/config"
+2026-06-13 18:00:17,213 INFO 748057 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks"
+2026-06-13 18:00:17,213 INFO 748057 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/mocks_proxy"
+2026-06-13 18:00:17,213 INFO 748057 [egg-watcher] Start watching: "/home/gandiantx/lab-manager/server/app.js"
+2026-06-13 18:00:17,213 INFO 748057 [egg-watcher:agent] watcher start success
+2026-06-13 18:00:17,246 INFO 748057 egg start timeline:
+▇▇▇▇▇▇▇▇▇▇ [685ms] - #0 Process Start
+          ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [2446ms] - #1 Application Start
+           ▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇ [1925ms] - #2 Load Plugin
+                                         ▇ [65ms] - #3 Load Config
+                                         ▇ [47ms] - #4 Require(0) config/config.default.ts
+                                          ▇ [1ms] - #5 Require(1) node_modules/egg-session/config/config.default.js
+                                          ▇ [0ms] - #6 Require(2) node_modules/egg-security/config/config.default.js
+                                          ▇ [0ms] - #7 Require(3) node_modules/egg-jsonp/config/config.default.js
+                                          ▇ [0ms] - #8 Require(4) node_modules/egg-onerror/config/config.default.js
+                                          ▇ [0ms] - #9 Require(5) node_modules/egg-i18n/config/config.default.js
+                                          ▇ [0ms] - #10 Require(6) node_modules/egg-watcher/config/config.default.js
+                                          ▇ [1ms] - #11 Require(7) node_modules/egg-schedule/config/config.default.js
+                                          ▇ [0ms] - #12 Require(8) node_modules/egg-multipart/config/config.default.js
+                                          ▇ [0ms] - #13 Require(9) node_modules/egg-development/config/config.default.js
+                                          ▇ [1ms] - #14 Require(10) node_modules/egg-logrotator/config/config.default.js
+                                          ▇ [0ms] - #15 Require(11) node_modules/egg-static/config/config.default.js
+                                          ▇ [0ms] - #16 Require(12) node_modules/egg-view/config/config.default.js
+                                          ▇ [0ms] - #17 Require(13) node_modules/egg-sequelize/config/config.default.js
+                                          ▇ [0ms] - #18 Require(14) node_modules/egg-validate/config/config.default.js
+                                          ▇ [0ms] - #19 Require(15) node_modules/egg-cors/config/config.default.js
+                                          ▇ [0ms] - #20 Require(16) node_modules/egg/config/config.default.js
+                                          ▇ [0ms] - #21 Require(17) config/config.default.ts
+                                          ▇ [0ms] - #22 Require(18) node_modules/egg-security/config/config.local.js
+                                          ▇ [0ms] - #23 Require(19) node_modules/egg-watcher/config/config.local.js
+                                          ▇ [1ms] - #24 Require(20) node_modules/egg-view/config/config.local.js
+                                          ▇ [1ms] - #25 Require(21) node_modules/egg/config/config.local.js
+                                          ▇ [44ms] - #26 Load extend/agent.js
+                                          ▇ [1ms] - #27 Require(22) node_modules/egg-security/app/extend/agent.js
+                                          ▇ [38ms] - #28 Require(23) node_modules/egg-schedule/app/extend/agent.js
+                                           ▇ [0ms] - #29 Require(24) node_modules/egg-logrotator/app/extend/agent.js
+                                           ▇ [41ms] - #30 Load extend/context.js
+                                           ▇ [5ms] - #31 Require(25) node_modules/egg-security/app/extend/context.js
+                                           ▇ [1ms] - #32 Require(26) node_modules/egg-jsonp/app/extend/context.js
+                                           ▇ [0ms] - #33 Require(27) node_modules/egg-i18n/app/extend/context.js
+                                           ▇ [8ms] - #34 Require(28) node_modules/egg-multipart/app/extend/context.js
+                                           ▇ [1ms] - #35 Require(29) node_modules/egg-view/app/extend/context.js
+                                           ▇ [1ms] - #36 Require(30) node_modules/egg-validate/app/extend/context.js
+                                           ▇ [1ms] - #37 Require(31) node_modules/egg/app/extend/context.js
+                                           ▇ [20ms] - #38 Require(32) app/extend/context.ts
+                                            ▇ [12ms] - #39 Load agent.js
+                                            ▇ [0ms] - #40 Require(33) node_modules/egg-security/agent.js
+                                            ▇ [0ms] - #41 Require(34) node_modules/egg-onerror/agent.js
+                                            ▇ [4ms] - #42 Require(35) node_modules/egg-watcher/agent.js
+                                            ▇ [0ms] - #43 Require(36) node_modules/egg-schedule/agent.js
+                                            ▇ [4ms] - #44 Require(37) node_modules/egg-development/agent.js
+                                            ▇ [1ms] - #45 Require(38) node_modules/egg-logrotator/agent.js
+                                            ▇ [0ms] - #46 Require(39) node_modules/egg-sequelize/agent.js
+                                            ▇ [0ms] - #47 Require(40) node_modules/egg/agent.js
+                                            ▇▇▇▇▇ [316ms] - #48 Before Start in node_modules/egg-watcher/lib/init.js:15:14
+                                            ▇▇▇▇ [303ms] - #49 Before Start in node_modules/egg-schedule/agent.js:12:9
+                                            ▇▇▇▇▇ [331ms] - #50 Before Start in node_modules/egg-development/agent.js:9:9
+                                               ▇ [73ms] - #51 Load "Symbol(model)" to Application
+                                                ▇ [65ms] - #52 Before Start in node_modules/egg-sequelize/lib/loader.js:39:7
+2026-06-13 18:00:17,246 INFO 748057 [egg:core] dump config after ready, 5ms
+2026-06-13 18:00:20,717 INFO 748057 [egg-watcher] Received a change event from eventSource: {"event":"rename","path":"/home/gandiantx/lab-manager/server/app/public","stat":{"dev":2050,"mode":16893,"nlink":2,"uid":1000,"gid":1000,"rdev":0,"blksize":4096,"ino":7864370,"size":4096,"blocks":8,"atimeMs":1781344820714.8945,"mtimeMs":1781344820714.8945,"ctimeMs":1781344820714.8945,"birthtimeMs":1781344820714.8945},"remove":false,"isDirectory":true,"isFile":false}

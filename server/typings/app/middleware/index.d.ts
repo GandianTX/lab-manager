@@ -3,7 +3,7 @@
 /* eslint-disable */
 
 import 'egg';
-import ExportAuth = require('../../../app/middleware/auth');
+import ExportAuth from '../../../app/middleware/auth';
 
 declare module 'egg' {
   interface IMiddleware {

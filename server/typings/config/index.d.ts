@@ -4,7 +4,7 @@
 
 import 'egg';
 import { EggAppConfig } from 'egg';
-import ExportConfigDefault = require('../../config/config.default');
+import ExportConfigDefault from '../../config/config.default';
 type ConfigDefault = ReturnType<typeof ExportConfigDefault>;
 type NewEggAppConfig = ConfigDefault;
 declare module 'egg' {

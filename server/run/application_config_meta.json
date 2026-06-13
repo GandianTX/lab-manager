@@ -1,8 +1,8 @@
 {
-  "keys": "/home/gandiantx/lab-manager/server/config/config.default.js",
+  "keys": "/home/gandiantx/lab-manager/server/config/config.default.ts",
   "security": {
     "csrf": {
-      "enable": "/home/gandiantx/lab-manager/server/config/config.default.js",
+      "enable": "/home/gandiantx/lab-manager/server/config/config.default.ts",
       "type": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
       "ignoreJSON": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
       "useSession": "/home/gandiantx/lab-manager/server/node_modules/egg-security/config/config.default.js",
@@ -62,37 +62,37 @@
     }
   },
   "cors": {
-    "origin": "/home/gandiantx/lab-manager/server/config/config.default.js",
-    "allowMethods": "/home/gandiantx/lab-manager/server/config/config.default.js"
+    "origin": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+    "allowMethods": "/home/gandiantx/lab-manager/server/config/config.default.ts"
   },
   "validate": {
-    "convert": "/home/gandiantx/lab-manager/server/config/config.default.js",
-    "widelyUndefined": "/home/gandiantx/lab-manager/server/config/config.default.js"
+    "convert": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+    "widelyUndefined": "/home/gandiantx/lab-manager/server/config/config.default.ts"
   },
   "sequelize": {
-    "dialect": "/home/gandiantx/lab-manager/server/config/config.default.js",
-    "host": "/home/gandiantx/lab-manager/server/config/config.default.js",
-    "port": "/home/gandiantx/lab-manager/server/config/config.default.js",
-    "database": "/home/gandiantx/lab-manager/server/config/config.default.js",
-    "username": "/home/gandiantx/lab-manager/server/config/config.default.js",
-    "password": "/home/gandiantx/lab-manager/server/config/config.default.js",
-    "timezone": "/home/gandiantx/lab-manager/server/config/config.default.js",
+    "dialect": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+    "host": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+    "port": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+    "database": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+    "username": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+    "password": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+    "timezone": "/home/gandiantx/lab-manager/server/config/config.default.ts",
     "define": {
-      "freezeTableName": "/home/gandiantx/lab-manager/server/config/config.default.js",
-      "underscored": "/home/gandiantx/lab-manager/server/config/config.default.js",
-      "timestamps": "/home/gandiantx/lab-manager/server/config/config.default.js"
+      "freezeTableName": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+      "underscored": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+      "timestamps": "/home/gandiantx/lab-manager/server/config/config.default.ts"
     },
     "pool": {
-      "max": "/home/gandiantx/lab-manager/server/config/config.default.js",
-      "min": "/home/gandiantx/lab-manager/server/config/config.default.js",
-      "acquire": "/home/gandiantx/lab-manager/server/config/config.default.js",
-      "idle": "/home/gandiantx/lab-manager/server/config/config.default.js"
+      "max": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+      "min": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+      "acquire": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+      "idle": "/home/gandiantx/lab-manager/server/config/config.default.ts"
     }
   },
-  "middleware": "/home/gandiantx/lab-manager/server/config/config.default.js",
+  "middleware": "/home/gandiantx/lab-manager/server/config/config.default.ts",
   "auth": {
-    "enable": "/home/gandiantx/lab-manager/server/config/config.default.js",
-    "ignore": "/home/gandiantx/lab-manager/server/config/config.default.js"
+    "enable": "/home/gandiantx/lab-manager/server/config/config.default.ts",
+    "ignore": "/home/gandiantx/lab-manager/server/config/config.default.ts"
   },
   "session": {
     "maxAge": "/home/gandiantx/lab-manager/server/node_modules/egg-session/config/config.default.js",
@@ -224,8 +224,14 @@
       "mysql2": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
     },
     "devDependencies": {
+      "@types/bcryptjs": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "@types/jsonwebtoken": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "@types/node": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
       "egg-bin": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
-      "egg-mock": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
+      "egg-mock": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "egg-ts-helper": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "ts-node": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js",
+      "typescript": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"
     },
     "engines": {
       "node": "/home/gandiantx/lab-manager/server/node_modules/egg/config/config.default.js"

@@ -7,18 +7,22 @@ type AnyClass = new (...args: any[]) => any;
 type AnyFunc<T = any> = (...args: any[]) => T;
 type CanExportFunc = AnyFunc<Promise<any>> | AnyFunc<IterableIterator<any>>;
 type AutoInstanceType<T, U = T extends CanExportFunc ? T : T extends AnyFunc ? ReturnType<T> : T> = U extends AnyClass ? InstanceType<U> : U;
-import ExportBorrow = require('../../../app/service/borrow');
-import ExportDashboard = require('../../../app/service/dashboard');
-import ExportNotice = require('../../../app/service/notice');
-import ExportResource = require('../../../app/service/resource');
-import ExportUser = require('../../../app/service/user');
+import ExportDashboard from '../../../app/service/dashboard';
+import ExportDevice from '../../../app/service/device';
+import ExportLab from '../../../app/service/lab';
+import ExportNotice from '../../../app/service/notice';
+import ExportRepair from '../../../app/service/repair';
+import ExportReservation from '../../../app/service/reservation';
+import ExportUser from '../../../app/service/user';
 
 declare module 'egg' {
   interface IService {
-    borrow: AutoInstanceType<typeof ExportBorrow>;
     dashboard: AutoInstanceType<typeof ExportDashboard>;
+    device: AutoInstanceType<typeof ExportDevice>;
+    lab: AutoInstanceType<typeof ExportLab>;
     notice: AutoInstanceType<typeof ExportNotice>;
-    resource: AutoInstanceType<typeof ExportResource>;
+    repair: AutoInstanceType<typeof ExportRepair>;
+    reservation: AutoInstanceType<typeof ExportReservation>;
     user: AutoInstanceType<typeof ExportUser>;
   }
 }

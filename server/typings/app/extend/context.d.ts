@@ -3,7 +3,7 @@
 /* eslint-disable */
 
 import 'egg';
-import ExtendContext = require('../../../app/extend/context');
+import ExtendContext from '../../../app/extend/context';
 type ExtendContextType = typeof ExtendContext;
 declare module 'egg' {
   interface Context extends ExtendContextType { }

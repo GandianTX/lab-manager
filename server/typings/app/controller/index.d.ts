@@ -3,18 +3,22 @@
 /* eslint-disable */
 
 import 'egg';
-import ExportBorrow = require('../../../app/controller/borrow');
-import ExportDashboard = require('../../../app/controller/dashboard');
-import ExportNotice = require('../../../app/controller/notice');
-import ExportResource = require('../../../app/controller/resource');
-import ExportUser = require('../../../app/controller/user');
+import ExportDashboard from '../../../app/controller/dashboard';
+import ExportDevice from '../../../app/controller/device';
+import ExportLab from '../../../app/controller/lab';
+import ExportNotice from '../../../app/controller/notice';
+import ExportRepair from '../../../app/controller/repair';
+import ExportReservation from '../../../app/controller/reservation';
+import ExportUser from '../../../app/controller/user';
 
 declare module 'egg' {
   interface IController {
-    borrow: ExportBorrow;
     dashboard: ExportDashboard;
+    device: ExportDevice;
+    lab: ExportLab;
     notice: ExportNotice;
-    resource: ExportResource;
+    repair: ExportRepair;
+    reservation: ExportReservation;
     user: ExportUser;
   }
 }

@@ -3,18 +3,20 @@
 /* eslint-disable */
 
 import 'egg';
-import ExportBorrowRecord = require('../../../app/model/borrow_record');
-import ExportNotice = require('../../../app/model/notice');
-import ExportResource = require('../../../app/model/resource');
-import ExportResourceCategory = require('../../../app/model/resource_category');
-import ExportUser = require('../../../app/model/user');
+import ExportDevice from '../../../app/model/device';
+import ExportLab from '../../../app/model/lab';
+import ExportNotice from '../../../app/model/notice';
+import ExportRepair from '../../../app/model/repair';
+import ExportReservation from '../../../app/model/reservation';
+import ExportUser from '../../../app/model/user';
 
 declare module 'egg' {
   interface IModel {
-    BorrowRecord: ReturnType<typeof ExportBorrowRecord>;
+    Device: ReturnType<typeof ExportDevice>;
+    Lab: ReturnType<typeof ExportLab>;
     Notice: ReturnType<typeof ExportNotice>;
-    Resource: ReturnType<typeof ExportResource>;
-    ResourceCategory: ReturnType<typeof ExportResourceCategory>;
+    Repair: ReturnType<typeof ExportRepair>;
+    Reservation: ReturnType<typeof ExportReservation>;
     User: ReturnType<typeof ExportUser>;
   }
 }
