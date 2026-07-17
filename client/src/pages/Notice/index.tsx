@@ -55,7 +55,7 @@ const NoticeManage: React.FC = () => {
     ...(isAdmin ? [{
       title: '操作', width: 120,
       render: (_: any, r: any) => (
-        <Space size={0}>
+        <Space className="table-action-space" size={[0, 0]} wrap>
           <Button type="link" size="small" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>
           <Popconfirm title="确认删除？" onConfirm={() => handleDelete(r.id)}>
             <Button type="link" size="small" danger icon={<DeleteOutlined />}>删除</Button>
@@ -72,7 +72,7 @@ const NoticeManage: React.FC = () => {
         {isAdmin && <Button type="primary" icon={<PlusOutlined />} onClick={handleAdd}>发布公告</Button>}
       </Space>
       <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
-        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize)} />
+        pagination={pagination} scroll={{ x: 'max-content' }} onChange={p => fetchData(p.current, p.pageSize)} />
 
       <Modal title={editingRecord ? '编辑公告' : '发布公告'} open={modalOpen}
         onOk={handleSubmit} onCancel={() => setModalOpen(false)} destroyOnClose>

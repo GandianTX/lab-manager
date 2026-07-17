@@ -64,7 +64,7 @@ const LabPage: React.FC = () => {
     {
       title: '操作', width: 160,
       render: (_: any, r: any) => (
-        <Space size={0}>
+        <Space className="table-action-space" size={[0, 0]} wrap>
           <Button type="link" size="small" icon={<EyeOutlined />} onClick={() => handleDetail(r.id)}>详情</Button>
           {isAdmin && <Button type="link" size="small" icon={<EditOutlined />} onClick={() => handleEdit(r)}>编辑</Button>}
           {isAdmin && (
@@ -91,7 +91,7 @@ const LabPage: React.FC = () => {
         {isAdmin && <Button type="primary" icon={<PlusOutlined />} onClick={handleAdd}>新增实验室</Button>}
       </Space>
       <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
-        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize, searchKeyword, statusFilter)} />
+        pagination={pagination} scroll={{ x: 'max-content' }} onChange={p => fetchData(p.current, p.pageSize, searchKeyword, statusFilter)} />
 
       {/* 新增/编辑弹窗 */}
       {isAdmin && (

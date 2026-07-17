@@ -80,7 +80,7 @@ const ReservationPage: React.FC = () => {
     {
       title: '操作', width: 160,
       render: (_: any, r: any) => (
-        <Space size={0}>
+        <Space className="table-action-space" size={[0, 0]} wrap>
           {isAdmin && r.status === 'PENDING' && (
             <>
               <Button type="link" size="small" onClick={() => handleApprove(r.id)}>通过</Button>
@@ -109,7 +109,7 @@ const ReservationPage: React.FC = () => {
         <Button type="primary" icon={<PlusOutlined />} onClick={handleApply}>提交预约申请</Button>
       </Space>
       <Table rowKey="id" columns={columns} dataSource={data} loading={loading}
-        pagination={pagination} onChange={p => fetchData(p.current, p.pageSize)} />
+        pagination={pagination} scroll={{ x: 'max-content' }} onChange={p => fetchData(p.current, p.pageSize)} />
 
       <Modal title="提交预约申请" open={modalOpen} onOk={handleSubmit} onCancel={() => setModalOpen(false)} destroyOnClose width={500}>
         <Form form={form} layout="vertical">
