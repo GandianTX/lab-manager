@@ -51,7 +51,7 @@ export default class RepairService extends Service {
   /** 确认故障（admin only）→ 设备状态自动改为 BROKEN */
   async confirm(id: number) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
 
     const record = await ctx.model.Repair.findByPk(id);
     if (!record) ctx.throw(404, '报修记录不存在');
@@ -80,7 +80,7 @@ export default class RepairService extends Service {
   /** 标记已处理（admin only）→ 设备状态自动恢复 NORMAL */
   async resolve(id: number) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
 
     const record = await ctx.model.Repair.findByPk(id);
     if (!record) ctx.throw(404, '报修记录不存在');

@@ -25,7 +25,7 @@ export default class DeviceService extends Service {
   /** 创建设备（admin only） */
   async create(params: any) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     const lab = await ctx.model.Lab.findByPk(params.lab_id);
     if (!lab) ctx.throw(400, '所属实验室不存在');
     return await ctx.model.Device.create(params);
@@ -34,7 +34,7 @@ export default class DeviceService extends Service {
   /** 更新设备（admin only） */
   async update(id: number, params: any) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     const device = await ctx.model.Device.findByPk(id);
     if (!device) ctx.throw(404, '设备不存在');
     if (params.lab_id) {
@@ -48,7 +48,7 @@ export default class DeviceService extends Service {
   /** 删除设备（admin only） */
   async delete(id: number) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     const device = await ctx.model.Device.findByPk(id);
     if (!device) ctx.throw(404, '设备不存在');
     // 检查是否有未完成的报修

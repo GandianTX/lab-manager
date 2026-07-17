@@ -22,7 +22,7 @@ export default class UserService extends Service {
     pageNum?: number | string; pageSize?: number | string; keyword?: string; role?: string;
   }) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     const { pageNum: pNum, pageSize: pSize, offset } = ctx.helper.parsePage(pageNum, pageSize);
 
     const where: any = {};
@@ -46,7 +46,7 @@ export default class UserService extends Service {
   /** 创建用户（admin only） */
   async create({ username, password, role }: { username: string; password: string; role?: string }) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     const exist = await ctx.model.User.findOne({ where: { username } });
     if (exist) ctx.throw(400, '用户名已存在');
     const hashed = bcrypt.hashSync(password, 10);
@@ -84,7 +84,7 @@ export default class UserService extends Service {
   /** 删除用户（admin only） */
   async delete(id: number) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     const user = await ctx.model.User.findByPk(id);
     if (!user) ctx.throw(404, '用户不存在');
     await user.destroy();

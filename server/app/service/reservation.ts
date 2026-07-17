@@ -50,7 +50,7 @@ export default class ReservationService extends Service {
   /** 审批通过（admin only） */
   async approve(id: number) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
 
     const record = await ctx.model.Reservation.findByPk(id);
     if (!record) ctx.throw(404, '预约记录不存在');
@@ -83,7 +83,7 @@ export default class ReservationService extends Service {
   /** 完成（admin only） */
   async finish(id: number) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
 
     const record = await ctx.model.Reservation.findByPk(id);
     if (!record) ctx.throw(404, '预约记录不存在');

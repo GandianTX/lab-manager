@@ -22,14 +22,14 @@ export default class NoticeService extends Service {
   /** 发布公告（admin only） */
   async create({ title, content, type }: { title: string; content?: string; type?: string }) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     return await ctx.model.Notice.create({ title, content, type: type || 'SYSTEM' });
   }
 
   /** 修改公告（admin only） */
   async update(id: number, params: any) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     const notice = await ctx.model.Notice.findByPk(id);
     if (!notice) ctx.throw(404, '公告不存在');
     await notice.update(params);
@@ -39,7 +39,7 @@ export default class NoticeService extends Service {
   /** 删除公告（admin only） */
   async delete(id: number) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     const notice = await ctx.model.Notice.findByPk(id);
     if (!notice) ctx.throw(404, '公告不存在');
     await notice.destroy();

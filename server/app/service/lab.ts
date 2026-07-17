@@ -33,7 +33,7 @@ export default class LabService extends Service {
   /** 创建实验室（admin only） */
   async create(params: any) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     return await ctx.model.Lab.create(params);
   }
 
@@ -50,7 +50,7 @@ export default class LabService extends Service {
   /** 删除实验室（admin only） */
   async delete(id: number) {
     const { ctx } = this;
-    if (!ctx.mustAdmin()) return;
+    ctx.mustAdmin();
     const lab = await ctx.model.Lab.findByPk(id);
     if (!lab) ctx.throw(404, '实验室不存在');
     // 检查是否有关联设备
